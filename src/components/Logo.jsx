@@ -1,0 +1,29 @@
+// The actual Luthen logo SVG mark (icon logo variant)
+export function LogoMark({ className = '', style = {} }) {
+  return (
+    <svg
+      className={className}
+      style={style}
+      viewBox="0 0 109.15 94.52"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M102.02,7.14c-4.45-4.41-10.58-7.14-17.32-7.14h-29.02c-3.53,0-6.37,2.85-6.37,6.37v1.64c0,2.61-2.08,4.69-4.69,4.69h-20.16c-6.74,0-12.87,2.77-17.28,7.18C2.73,24.33,0,30.43,0,37.2v32.87c0,6.77,2.73,12.87,7.18,17.32,4.41,4.41,10.54,7.13,17.28,7.13h29.02c3.53,0,6.37-2.85,6.37-6.33v-1.68c0-2.57,2.12-4.69,4.69-4.69h20.16c6.73,0,12.87-2.73,17.32-7.18,4.41-4.45,7.14-10.54,7.14-17.28V24.45c0-6.77-2.73-12.87-7.14-17.32ZM96.61,64.5c0,2.24-1.84,4.09-4.09,4.09h-27.02c-3.61,0-6.53,2.93-6.53,6.53v1.68c0,2.69-2.2,4.89-4.89,4.89H16.68c-2.29,0-4.13-1.84-4.13-4.13V30.06c0-2.29,1.84-4.13,4.13-4.13h26.98c3.65,0,6.57-2.93,6.57-6.53v-1.68c0-2.69,2.16-4.89,4.89-4.89h37.4c2.25,0,4.09,1.84,4.09,4.13v47.54Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
+export function LogoFull({ dark = true }) {
+  const color = dark ? '#0A0A0F' : '#ffffff'
+  return (
+    <span style={{ display: 'inline-flex', alignItems: 'center', gap: 9 }}>
+      <LogoMark style={{ width: 28, height: 28, color }} />
+      <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: '-0.6px', color }}>
+        Luthen<sup style={{ fontSize: 8, fontWeight: 500, verticalAlign: 'super', letterSpacing: 0 }}>®</sup>
+      </span>
+    </span>
+  )
+}
