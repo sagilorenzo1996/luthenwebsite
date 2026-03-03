@@ -134,8 +134,8 @@ export default function Resources() {
               <h2 className="con-h2">Docs & API Reference</h2>
               <p style={{ fontSize: 15.5, lineHeight: 1.65, color: 'rgba(255,255,255,0.55)', marginBottom: 32 }}>Everything your team needs to connect, configure, and extend Luthen's autonomy layer — from quickstart guides to full API reference documentation.</p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-                <a href="#" className="btn-console">API Reference <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
-                <a href="#" className="btn-console">Quickstart Guide <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
+                <Link to="/docs" className="btn-console">API Reference <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></Link>
+                <Link to="/docs#quickstart" className="btn-console">Quickstart Guide <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></Link>
               </div>
             </div>
             <div className="console-box">

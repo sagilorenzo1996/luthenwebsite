@@ -42,7 +42,7 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-right">
-          <a href="#" className="nav-signin">Sign In</a>
+          <a href="https://app.luthen.ai" className="nav-signin">Sign In</a>
           <Link to="/demo" className="nav-demo">Request Demo</Link>
           <Link to="/demo" className="btn-nav">Get Started</Link>
         </div>
@@ -75,7 +75,7 @@ export default function Navbar() {
         <div className="nav-mobile-divider" />
         <div className="nav-mobile-ctas">
           <Link to="/demo" className="btn-hero" onClick={() => setMenuOpen(false)}>Request Demo</Link>
-          <a href="#" className="btn-hero-ghost" onClick={() => setMenuOpen(false)}>Sign In</a>
+          <a href="https://app.luthen.ai" className="btn-hero-ghost" onClick={() => setMenuOpen(false)}>Sign In</a>
         </div>
       </div>
     </>

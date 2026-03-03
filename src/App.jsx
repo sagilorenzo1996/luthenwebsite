@@ -11,6 +11,10 @@ import Demo from './pages/Demo'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
+import Press from './pages/Press'
+import Careers from './pages/Careers'
+import Docs from './pages/Docs'
+import Security from './pages/Security'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -36,6 +40,10 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/press" element={<Press />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/docs" element={<Docs />} />
+          <Route path="/security" element={<Security />} />
         </Routes>
       </Layout>
     </>

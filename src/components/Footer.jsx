@@ -44,15 +44,15 @@ export default function Footer() {
             <li><Link to="/resources">Documentation</Link></li>
             <li><Link to="/resources#case-studies">Case Studies</Link></li>
             <li><Link to="/resources#blog">Blog</Link></li>
-            <li><Link to="/resources#api">API Reference</Link></li>
+            <li><Link to="/docs">API Reference</Link></li>
           </ul>
         </div>
         <div>
           <div className="f-col-hdr">Company</div>
           <ul className="f-links">
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/about#careers">Careers</Link></li>
-            <li><Link to="/about#security">Security</Link></li>
+            <li><Link to="/careers">Careers</Link></li>
+            <li><Link to="/security">Security</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -62,8 +62,13 @@ export default function Footer() {
         <div className="footer-legal">
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms of Service</Link>
-          <Link to="/about#security">Security</Link>
-          <a href="#">Cookie Preferences</a>
+          <Link to="/security">Security</Link>
+          <button
+            onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-prefs'))}
+            style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', font: 'inherit', fontSize: 'inherit', color: 'inherit', textDecoration: 'none' }}
+          >
+            Cookie Preferences
+          </button>
         </div>
       </div>
     </footer>

@@ -154,7 +154,7 @@ export default function About() {
           <h2 className="cta-h2">Join the team.</h2>
           <p className="cta-sub">We're hiring engineers, product managers, and enterprise sales leaders who believe in autonomous enterprise.</p>
           <div className="cta-btns">
-            <a href="#" className="btn-hero">View Open Roles <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></a>
+            <Link to="/careers" className="btn-hero">View Open Roles <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg></Link>
             <Link to="/contact" className="btn-hero-ghost">Get in Touch</Link>
           </div>
         </section>
