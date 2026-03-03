@@ -13,7 +13,7 @@ import ScrollFadeIn from '../components/ScrollFadeIn'
 // If you prefer to use Cal.com or Calendly, swap the GCAL_BOOKING_URL for
 // your embed link and update the iframe src / anchor href below.
 const GCAL_BOOKING_URL =
-  'https://calendar.google.com/calendar/appointments/schedules/YOUR_SCHEDULE_ID_HERE'
+  'https://calendar.app.google/8uowrZv4gUo27EVx5'
 
 // A Google Calendar "Add Event" link pre-filled for a 30-minute intro call.
 // This is a fallback that lets prospects manually add a meeting to their
@@ -30,10 +30,10 @@ function buildGCalEventLink() {
   now.setHours(10, 0, 0, 0)
   const start = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
   const end = new Date(now.getTime() + 30 * 60 * 1000).toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z'
-  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${details}&location=${location}&dates=${start}/${end}`
+  return `https://calendar.google.com/calendar/appointments/schedules/AcZssZ2lZMfv2zTT3zVKhqa9X8pCZx0bG80zRIBPSM3817wbQM_XLPd9UUi0QZubi5WrVOiqPMvZhUTt?gv=true`
 }
 
-const USE_INLINE_SCHEDULER = false // set to true once you have a real GCAL_BOOKING_URL
+const USE_INLINE_SCHEDULER = true // set to true once you have a real GCAL_BOOKING_URL
 
 export default function Demo() {
   const [form, setForm] = useState({ name: '', email: '', company: '', role: '', message: '' })
