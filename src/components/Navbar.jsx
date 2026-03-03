@@ -28,13 +28,19 @@ export default function Navbar() {
         </Link>
 
         <ul className="nav-links">
-          <li>
+          <li className="nav-item-dropdown">
             <NavLink to="/platform" className={({ isActive }) => isActive ? 'active' : ''}>
               Platform
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                 <path d="M2 3.5l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </NavLink>
+            <div className="dropdown-menu">
+              <Link to="/platform" className="dropdown-link">Connect</Link>
+              <Link to="/platform#intelligence" className="dropdown-link">Intelligence</Link>
+              <Link to="/platform#builder" className="dropdown-link">Builder</Link>
+              <Link to="/pricing" className="dropdown-link">Pricing</Link>
+            </div>
           </li>
           <li><NavLink to="/solutions" className={({ isActive }) => isActive ? 'active' : ''}>Solutions</NavLink></li>
           <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''}>Resources</NavLink></li>
@@ -42,7 +48,6 @@ export default function Navbar() {
         </ul>
 
         <div className="nav-right">
-          <a href="https://app.luthen.ai" className="nav-signin">Sign In</a>
           <Link to="/demo" className="nav-demo">Request Demo</Link>
           <Link to="/demo" className="btn-nav">Get Started</Link>
         </div>
@@ -66,6 +71,12 @@ export default function Navbar() {
 
       <div className={`nav-mobile-menu${menuOpen ? ' open' : ''}`}>
         <Link to="/platform" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Platform</Link>
+        <div className="nav-mobile-sublinks">
+          <Link to="/platform" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Connect</Link>
+          <Link to="/platform#intelligence" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Intelligence</Link>
+          <Link to="/platform#builder" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Builder</Link>
+          <Link to="/pricing" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Pricing</Link>
+        </div>
         <Link to="/solutions" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Solutions</Link>
         <Link to="/resources" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Resources</Link>
         <Link to="/pricing" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Pricing</Link>
@@ -75,7 +86,6 @@ export default function Navbar() {
         <div className="nav-mobile-divider" />
         <div className="nav-mobile-ctas">
           <Link to="/demo" className="btn-hero" onClick={() => setMenuOpen(false)}>Request Demo</Link>
-          <a href="https://app.luthen.ai" className="btn-hero-ghost" onClick={() => setMenuOpen(false)}>Sign In</a>
         </div>
       </div>
     </>
