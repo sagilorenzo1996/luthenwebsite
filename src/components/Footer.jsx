@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2025 Luthen, Inc. All rights reserved.</span>
+        <span>© 2026 Luthen, Inc. All rights reserved.</span>
         <div className="footer-legal">
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms of Service</Link>
