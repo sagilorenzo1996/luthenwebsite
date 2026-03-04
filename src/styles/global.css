@@ -190,10 +190,20 @@ nav{
 
 /* ── HERO ── */
 .hero{
-  background:var(--yellow);
+  background: radial-gradient(circle at center, var(--white) 0%, var(--yellow) 50%, #c5e68b 100%);
+  background-size: 200% 200%;
   padding:72px 40px 88px;
   display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;
   position:relative;overflow:hidden;
+  animation: heroPulse 5s ease-in-out infinite alternate;
+}
+@keyframes heroPulse {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 200% 200%;
+  }
 }
 .hero::after{
   content:'';position:absolute;right:-200px;bottom:-200px;

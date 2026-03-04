@@ -86,13 +86,8 @@ export default function Home() {
       {/* ── TRUST BAR ── */}
       <div className="trust-bar">
         <div className="trust-item">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1l1.3 4h4.2l-3.4 2.5 1.3 4L6.5 9.1l-3.4 2.4 1.3-4L1 5h4.2L6.5 1z" stroke="currentColor" strokeWidth="1.1" strokeLinejoin="round"/></svg>
-          SOC 2 Type II Certified
-        </div>
-        <div className="trust-div"></div>
-        <div className="trust-item">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="2" y="5.5" width="9" height="6.5" rx="1.2" stroke="currentColor" strokeWidth="1.1"/><path d="M4 5.5V4a2.5 2.5 0 015 0v1.5" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round"/></svg>
-          GDPR &amp; ISO 27001
+          GDPR Compliant
         </div>
         <div className="trust-div"></div>
         <div className="trust-item">
@@ -102,12 +97,7 @@ export default function Home() {
         <div className="trust-div"></div>
         <div className="trust-item">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M6.5 1.5L3 4v3.5c0 2.5 1.5 4.2 3.5 5 2-.8 3.5-2.5 3.5-5V4L6.5 1.5z" stroke="currentColor" strokeWidth="1.1" strokeLinejoin="round"/></svg>
-          On-premise &amp; Air-gap Support
-        </div>
-        <div className="trust-div"></div>
-        <div className="trust-item">
-          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="5" r="2.5" stroke="currentColor" strokeWidth="1.1"/><path d="M1.5 11.5c0-2.76 2.24-5 5-5s5 2.24 5 5" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round"/></svg>
-          Dedicated Enterprise CSM
+          On-premise &amp; Cloud Support
         </div>
       </div>
 
