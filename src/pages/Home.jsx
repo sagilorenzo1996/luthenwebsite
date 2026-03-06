@@ -127,11 +127,11 @@ export default function Home() {
       {/* ── TICKER ── */}
       <div className="ticker-wrap">
         <div className="ticker-inner">
-          <span className="ticker-lbl">Trusted by global enterprises</span>
+          <span className="ticker-lbl">Ensure the best technology for your enterprise</span>
           <div className="ticker-mask">
             <div className="ticker-track">
-              {['Axion Industries','Meridian Global','Fortis Systems','Caldwell & Co.','Orion Logistics','Vesper Corp','Northvault Bank','Pulsar Networks','Synapse AI',
-                'Axion Industries','Meridian Global','Fortis Systems','Caldwell & Co.','Orion Logistics','Vesper Corp','Northvault Bank','Pulsar Networks','Synapse AI'].map((co, i) => (
+              {['Speed','Low Costs','Artificial Intelligence','Agile Changes','400+ Integrations','Business Intelligence',
+                'Speed','Low Costs','Artificial Intelligence','Agile Changes','400+ Integrations','Business Intelligence'].map((co, i) => (
                 <span key={i} className="ticker-co">{co}</span>
               ))}
             </div>
@@ -189,7 +189,7 @@ export default function Home() {
       <ScrollFadeIn>
         <section className="shift-s s">
           <div className="center" style={{ marginBottom: 52 }}>
-            <div className="s-label">Repositioning</div>
+            <div className="s-label">Solution</div>
             <h2 className="s-h2">The Shift to Autonomous Enterprise</h2>
             <p className="s-body">Legacy AI deployments optimise for capability. The autonomous enterprise optimises for execution.</p>
           </div>
@@ -217,7 +217,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p style={{ textAlign: 'center', fontSize: 15, color: 'var(--g400)', fontWeight: 500 }}>This reframes the category.</p>
         </section>
       </ScrollFadeIn>
 
@@ -232,21 +231,21 @@ export default function Home() {
           <div className="grid-3">
             <div className="card" style={{ '--i': 0 }}>
               <div className="card-icon icon-blue">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2.5" stroke="#3b82f6" strokeWidth="1.5"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.34 4.34l1.41 1.41M14.25 14.25l1.41 1.41M4.34 15.66l1.41-1.41M14.25 5.75l1.41-1.41" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <img src="/assets/icons/pulse.svg" alt="Lens Icon" width="50" height="50" />
               </div>
               <h3>Connect</h3>
               <p>Activate legacy systems without migration. Secure, governed integrations that go live in days, not months.</p>
             </div>
             <div className="card" style={{ '--i': 1 }}>
               <div className="card-icon icon-purple">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 7c0-2.21 1.79-4 4-4s4 1.79 4 4c0 1.5-.82 2.81-2.04 3.5L11 13H9l-.96-2.5C6.82 9.81 6 8.5 6 7z" stroke="#8b5cf6" strokeWidth="1.5" strokeLinejoin="round"/><path d="M8 16h4M9 13v3M11 13v3" stroke="#8b5cf6" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <img src="/assets/icons/lens.svg" alt="Lens Icon" width="50" height="50" />
               </div>
               <h3>Intelligence</h3>
               <p>Governed reasoning with an improving cost curve. AI that learns your patterns and gets cheaper over time.</p>
             </div>
             <div className="card" style={{ '--i': 2 }}>
               <div className="card-icon icon-green">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 10h14M3 5.5h14M3 14.5h9" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round"/><path d="M14 12.5l3 2-3 2" stroke="#16a34a" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                <img src="/assets/icons/neurocore.svg" alt="Lens Icon" width="50" height="50" />
               </div>
               <h3>Builder</h3>
               <p>Turn intent into production workflows. Build, test, and deploy without writing infrastructure code.</p>
