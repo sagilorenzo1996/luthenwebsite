@@ -114,7 +114,7 @@ export default function Home() {
             </Link>
             <Link to="/platform" className="btn-hero-ghost">Watch a Workflow Run</Link>
           </div>
-          <p className="hero-micro">No credit card required &nbsp;·&nbsp; Dedicated onboarding &nbsp;·&nbsp; Custom SLA available</p>
+          <p className="hero-micro">·&nbsp; Dedicated onboarding &nbsp;·&nbsp; Custom SLA available</p>
           <div className="hero-badges">
             <span className="hero-badge"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5l3 3 7-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> No migration required</span>
             <span className="hero-badge"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5l3 3 7-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> Governed by default</span>
