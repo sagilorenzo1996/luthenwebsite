@@ -290,10 +290,9 @@ export default function Home() {
 
       {/* ── STATS STRIP ── */}
       <div className="stats-strip">
-        <StatItem num="60" suffix="%" label="Reduction in production coordination time" src="Manufacturing customer avg." />
-        <StatItem num="2.9" suffix="×" label="Faster workflow delivery vs. traditional dev" src="Based on 2024 deployment data" />
-        <StatItem num="40" suffix="%" label="Average cost reduction after 12-month internalization" src="Across 120+ enterprise deployments" />
-        <StatItem num="500" suffix="+" label="Enterprise deployments across manufacturing, logistics & telecom" src="As of Q4 2024" />
+        <StatItem num="60" suffix="%" label="Reduction in production coordination time" />
+        <StatItem num="2.9" suffix="×" label="Faster workflow delivery vs. traditional dev" />
+        <StatItem num="40" suffix="%" label="Average cost reduction after 12-month internalization" />
       </div>
 
       {/* ── COST CURVE ── */}
@@ -432,11 +431,13 @@ export default function Home() {
             <h2 className="s-h2">Built for Enterprise Operations</h2>
             <p className="s-body">Deployed across regulated, high-volume industries where reliability and governance are non-negotiable.</p>
           </div>
-          <div className="grid-3">
+          <div className="grid-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
             {[
               { icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="9" width="16" height="9" rx="1.5" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M5.5 9V7a4.5 4.5 0 019 0v2" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/><line x1="5" y1="13" x2="15" y2="13" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/></svg>, title: 'Manufacturing', desc: 'Reduced production coordination time by 60%', outcome: '60% faster coordination' },
               { icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="7.5" width="12" height="8" rx="1.5" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M14 10.5h2.5a2 2 0 012 2v1.5a2 2 0 01-2 2H14" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/><circle cx="5.5" cy="17.5" r="1.5" stroke="#0A0A0F" strokeWidth="1.5"/><circle cx="11" cy="17.5" r="1.5" stroke="#0A0A0F" strokeWidth="1.5"/></svg>, title: 'Logistics', desc: 'Automated cross-system routing decisions', outcome: 'Real-time routing at scale' },
-              { icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2.5" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M5.86 5.86a6 6 0 000 8.28M14.14 5.86a6 6 0 010 8.28" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/><path d="M3.22 3.22a9.5 9.5 0 000 13.56M16.78 3.22a9.5 9.5 0 010 13.56" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/></svg>, title: 'Telecom / Utilities', desc: 'Enabled real-time service provisioning', outcome: 'Sub-second provisioning' },
+              { icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2.5" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M5.86 5.86a6 6 0 000 8.28M14.14 5.86a6 6 0 010 8.28" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/><path d="M3.22 3.22a9.5 9.5 0 000 13.56M16.78 3.22a9.5 9.5 0 010 13.56" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/></svg>, title: 'Telecom / Utilities', desc: 'Enabled fleet monitoring', outcome: 'Get intelligence' },
+              { icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2a8 8 0 100 16 8 8 0 000-16z" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M10 5v10M5 10h10" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/><circle cx="10" cy="10" r="2" fill="#0A0A0F"/></svg>, title: 'Microbiology labs management', desc: 'Automated sample tracking and compliance reporting', outcome: '100% data integrity' },
+              { icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="12" rx="2" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M7 11l2-2 2 2 2-2" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M3 8h14" stroke="#0A0A0F" strokeWidth="1.5"/></svg>, title: 'Fund management', desc: 'Streamlined portfolio rebalancing and risk assessment', outcome: '45% reduction in manual audit time' },
             ].map((c, i) => (
               <div className="card" key={i} style={{ '--i': i }}>
                 <div className="card-icon">{c.icon}</div>
@@ -481,42 +482,42 @@ export default function Home() {
               </span>
             ))}
           </div>
-          <p className="int-note">200+ connectors available. Don't see yours? <Link to="/contact">Request an integration →</Link></p>
+          <p className="int-note">400+ connectors available. Don't see yours? <Link to="/contact">Request an integration →</Link></p>
         </section>
       </ScrollFadeIn>
 
       {/* ── TESTIMONIALS ── */}
       <ScrollFadeIn>
         <section className="testi-s">
-          <div className="testi-header">
-            <div className="testi-s-lbl">Customer Stories</div>
-            <h2 className="testi-h2">Enterprises that chose autonomy.</h2>
-          </div>
-          <div className="testi-grid">
-            {[
-              { initials: 'AK', name: 'Andrei Kowalski', role: 'VP Operations · Axion Industries', gradient: 'linear-gradient(135deg,var(--turquoise),var(--yellow))', quote: 'We connected our SAP environment in under two weeks. The governance layer gave our compliance team confidence we\'d never had with any AI vendor before.' },
-              { initials: 'SM', name: 'Sarah Mensah', role: 'Chief Digital Officer · Meridian Global', gradient: 'linear-gradient(135deg,var(--salmon),var(--yellow))', quote: 'The cost internalization is real. By month 10 our per-workflow cost had dropped 38%. That\'s compound efficiency we couldn\'t get from any API-first vendor.' },
-              { initials: 'TN', name: 'Takeshi Nishi', role: 'Head of IT · Fortis Systems', gradient: 'linear-gradient(135deg,var(--green),var(--turquoise))', quote: 'Audit readiness used to require a dedicated team. Luthen\'s traceability layer means every decision is logged, attributed, and accessible in one click.' },
-            ].map((t, i) => (
-              <div className="testi-card" key={i} style={{ '--i': i }}>
-                <div className="testi-stars">
-                  {[...Array(5)].map((_, j) => (
-                    <svg key={j} className="testi-star" viewBox="0 0 14 14" fill="currentColor">
-                      <path d="M7 1l1.5 4h4l-3.25 2.4 1.25 4L7 9.1l-3.5 2.3 1.25-4L1.5 5h4L7 1z"/>
-                    </svg>
-                  ))}
-                </div>
-                <p className="testi-quote">{t.quote}</p>
-                <div className="testi-meta">
-                  <div className="testi-avatar" style={{ background: t.gradient }}>{t.initials}</div>
-                  <div>
-                    <div className="testi-name">{t.name}</div>
-                    <div className="testi-role">{t.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/*<div className="testi-header">*/}
+          {/*  <div className="testi-s-lbl">Customer Stories</div>*/}
+          {/*  <h2 className="testi-h2">Enterprises that chose autonomy.</h2>*/}
+          {/*</div>*/}
+          {/*<div className="testi-grid">*/}
+          {/*  {[*/}
+          {/*    { initials: 'AK', name: 'Andrei Kowalski', role: 'VP Operations · Axion Industries', gradient: 'linear-gradient(135deg,var(--turquoise),var(--yellow))', quote: 'We connected our SAP environment in under two weeks. The governance layer gave our compliance team confidence we\'d never had with any AI vendor before.' },*/}
+          {/*    { initials: 'SM', name: 'Sarah Mensah', role: 'Chief Digital Officer · Meridian Global', gradient: 'linear-gradient(135deg,var(--salmon),var(--yellow))', quote: 'The cost internalization is real. By month 10 our per-workflow cost had dropped 38%. That\'s compound efficiency we couldn\'t get from any API-first vendor.' },*/}
+          {/*    { initials: 'TN', name: 'Takeshi Nishi', role: 'Head of IT · Fortis Systems', gradient: 'linear-gradient(135deg,var(--green),var(--turquoise))', quote: 'Audit readiness used to require a dedicated team. Luthen\'s traceability layer means every decision is logged, attributed, and accessible in one click.' },*/}
+          {/*  ].map((t, i) => (*/}
+          {/*    <div className="testi-card" key={i} style={{ '--i': i }}>*/}
+          {/*      <div className="testi-stars">*/}
+          {/*        {[...Array(5)].map((_, j) => (*/}
+          {/*          <svg key={j} className="testi-star" viewBox="0 0 14 14" fill="currentColor">*/}
+          {/*            <path d="M7 1l1.5 4h4l-3.25 2.4 1.25 4L7 9.1l-3.5 2.3 1.25-4L1.5 5h4L7 1z"/>*/}
+          {/*          </svg>*/}
+          {/*        ))}*/}
+          {/*      </div>*/}
+          {/*      <p className="testi-quote">{t.quote}</p>*/}
+          {/*      <div className="testi-meta">*/}
+          {/*        <div className="testi-avatar" style={{ background: t.gradient }}>{t.initials}</div>*/}
+          {/*        <div>*/}
+          {/*          <div className="testi-name">{t.name}</div>*/}
+          {/*          <div className="testi-role">{t.role}</div>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  ))}*/}
+          {/*</div>*/}
         </section>
       </ScrollFadeIn>
 
@@ -525,7 +526,7 @@ export default function Home() {
         <section className="cta-s">
           <div className="cta-s-lbl">Get Started</div>
           <h2 className="cta-h2">Build Your Autonomy Layer.</h2>
-          <p className="cta-sub">Join 500+ enterprises running intelligent, governed workflows on Luthen.</p>
+          <p className="cta-sub">Join enterprises running intelligent, governed workflows on Luthen.</p>
           <div className="cta-btns">
             <Link to="/demo" className="btn-hero">
               Schedule a Solution Blueprint
@@ -534,7 +535,7 @@ export default function Home() {
             <Link to="/demo" className="btn-hero-ghost">Take the Enterprise Autonomy Assessment</Link>
           </div>
           <div className="cta-micro">
-            {['No credit card required', 'Dedicated onboarding team', 'Custom enterprise SLA available'].map(item => (
+            {['Dedicated onboarding team', 'Custom enterprise SLA available'].map(item => (
               <span className="cta-micro-item" key={item}>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1.5 6l3 3 6-6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 {item}

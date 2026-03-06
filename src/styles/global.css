@@ -441,7 +441,7 @@ nav{
 /* ── STATS ── */
 .stats-strip{
   background:var(--black);padding:60px 40px;
-  display:grid;grid-template-columns:repeat(4,1fr);
+  display:grid;grid-template-columns:repeat(3,1fr);
   position:relative;overflow:hidden;
 }
 .stats-strip::before{
@@ -454,6 +454,7 @@ nav{
   padding:20px 28px;
   border-right:1px solid rgba(255,255,255,0.06);
   position:relative;
+  text-align:center;
 }
 .stat-item:last-child{border-right:none}
 .stat-num{font-size:clamp(36px,3.5vw,52px);font-weight:700;letter-spacing:-2px;color:#fff;line-height:1;margin-bottom:6px}
@@ -581,7 +582,7 @@ nav{
 .int-note a:hover{border-color:var(--black)}
 
 /* ── TESTIMONIALS ── */
-.testi-s{background:var(--black);padding:96px 40px}
+.testi-s{background:var(--black);padding:18px 40px}
 .testi-header{text-align:center;margin-bottom:56px}
 .testi-s-lbl{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -824,8 +825,9 @@ footer{
   .shift-table{grid-template-columns:1fr}
   .shift-col.right{border-left:none;border-top:1px solid var(--g100)}
   .console-s{grid-template-columns:1fr;padding:60px 20px;gap:40px}
-  .stats-strip{grid-template-columns:1fr 1fr}
-  .stat-item:nth-child(2){border-right:none}
+  .stats-strip{grid-template-columns:1fr}
+  .stat-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .stat-item:last-child{border-bottom:none}
   .s{padding:64px 20px}
   .trust-bar{padding:10px 20px;gap:16px}
   .trust-div{display:none}
