@@ -13,14 +13,14 @@ const pressReleases = [
     date: 'October 2024',
     tag: 'Milestone',
     title: 'Luthen Surpasses 500 Enterprise Deployments and Achieves SOC 2 Type II Certification',
-    excerpt: 'Luthen today announced it has crossed 500 active enterprise deployments across manufacturing, logistics, telecom, and financial services — achieving SOC 2 Type II and ISO 27001 certification in the same quarter.',
+    excerpt: 'Luthen today announced it has crossed 500 active enterprise deployments across manufacturing, logistics, telecom, and financial services - achieving SOC 2 Type II and ISO 27001 certification in the same quarter.',
     featured: false,
   },
   {
     date: 'June 2024',
     tag: 'Product',
     title: 'Luthen Launches Intelligence Engine with Pattern Internalization',
-    excerpt: 'The new Intelligence engine introduces a proprietary pattern-internalization layer that reduces the marginal cost of each workflow execution over time — breaking the linear cost curve of traditional AI API pricing.',
+    excerpt: 'The new Intelligence engine introduces a proprietary pattern-internalization layer that reduces the marginal cost of each workflow execution over time - breaking the linear cost curve of traditional AI API pricing.',
     featured: false,
   },
   {
@@ -40,7 +40,7 @@ const pressReleases = [
 ]
 
 const coverage = [
-  { outlet: 'TechCrunch', headline: '"Luthen wants to make enterprise AI actually work — starting with your existing systems"', date: 'Feb 2025' },
+  { outlet: 'TechCrunch', headline: '"Luthen wants to make enterprise AI actually work - starting with your existing systems"', date: 'Feb 2025' },
   { outlet: 'Forbes', headline: '"The Autonomous Enterprise Is Here. Luthen Is Building the Rails for It."', date: 'Feb 2025' },
   { outlet: 'VentureBeat', headline: '"How Luthen\'s cost internalization model is upending enterprise AI economics"', date: 'Jan 2025' },
   { outlet: 'The Information', headline: '"Inside the startup betting that enterprises won\'t rip and replace their ERP systems for AI"', date: 'Dec 2024' },
@@ -164,7 +164,7 @@ export default function Press() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { label: 'Logo Package', desc: 'SVG, PNG — light & dark variants', icon: '🖼️' },
+                { label: 'Logo Package', desc: 'SVG, PNG - light & dark variants', icon: '🖼️' },
                 { label: 'Fact Sheet', desc: 'Company overview, stats, key milestones', icon: '📄' },
                 { label: 'Executive Headshots', desc: 'High-res photos of leadership team', icon: '👤' },
                 { label: 'Product Screenshots', desc: 'Platform UI, workflow console, dashboard', icon: '💻' },

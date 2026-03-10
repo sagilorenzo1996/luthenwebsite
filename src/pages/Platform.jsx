@@ -22,7 +22,7 @@ export default function Platform() {
               <h2 className="s-h2">Connect</h2>
               <p className="s-body" style={{ marginBottom: 32 }}>Activate your legacy systems without migration. Luthen's Connect engine creates secure, governed integrations that go live in days — not months. No API rewrites, no rip-and-replace.</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
-                {['200+ pre-built connectors for enterprise systems','Secure, encrypted data channels with zero trust','Role-based access control at the connector level','Live in days with dedicated implementation support'].map(feat => (
+                {['400+ pre-built connectors for enterprise systems','Secure, encrypted data channels with zero trust','Role-based access control at the connector level','Live in days with dedicated implementation support'].map(feat => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14, fontWeight: 500, color: 'var(--g600)' }}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l3.5 3.5 7.5-7" stroke="var(--turquoise)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     {feat}

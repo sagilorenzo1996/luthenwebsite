@@ -12,7 +12,7 @@ const investors = ['Sequoia Capital', 'Benchmark', 'Kleiner Perkins', 'Andreesse
 
 const milestones = [
   { year: '2022', event: 'Luthen founded. $8M seed round from Sequoia.' },
-  { year: '2023', event: 'First 50 enterprise deployments. Series A — $22M.' },
+  { year: '2023', event: 'First 50 enterprise deployments. Series A - $22M.' },
   { year: '2024', event: '500+ enterprise deployments. 99.99% uptime achieved. SOC 2 Type II certified.' },
   { year: '2025', event: '$47M Series B. Expansion into APAC and EMEA markets.' },
 ]
@@ -35,7 +35,7 @@ export default function About() {
             <div className="s-label" style={{ justifyContent: 'center' }}>Our Mission</div>
             <h2 className="s-h2">"Upgrade execution. Not your stack."</h2>
             <p style={{ fontSize: 17, lineHeight: 1.75, color: 'rgba(0,0,0,0.6)', marginTop: 16 }}>
-              The world's most complex operations run on decades of institutional infrastructure. We believe that intelligence should flow through those systems — not replace them. Luthen makes that possible at enterprise scale.
+              The world's most complex operations run on decades of institutional infrastructure. We believe that intelligence should flow through those systems - not replace them. Luthen makes that possible at enterprise scale.
             </p>
           </div>
         </section>
@@ -126,7 +126,7 @@ export default function About() {
           <div className="center" style={{ marginBottom: 48 }}>
             <div className="s-label">Security</div>
             <h2 className="s-h2">Enterprise-grade security by design.</h2>
-            <p className="s-body">Security and compliance are built into Luthen's architecture — not bolted on afterward.</p>
+            <p className="s-body">Security and compliance are built into Luthen's architecture - not bolted on afterward.</p>
           </div>
           <div className="grid-4">
             {[

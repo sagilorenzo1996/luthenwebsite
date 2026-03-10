@@ -223,7 +223,7 @@ const { accessToken } = await client.auth.getToken({
   },
   connectors: {
     title: 'Connectors',
-    subtitle: 'Connect to 200+ enterprise systems. All connectors support secure, governed data channels.',
+    subtitle: 'Connect to 400+ enterprise systems. All connectors support secure, governed data channels.',
     steps: [
       {
         step: '01',

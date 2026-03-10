@@ -6,7 +6,7 @@ const departments = ['All', 'Engineering', 'Product', 'Sales', 'Customer Success
 
 const roles = [
   {
-    title: 'Staff Software Engineer — Platform Core',
+    title: 'Staff Software Engineer - Platform Core',
     dept: 'Engineering',
     location: 'San Francisco, CA',
     type: 'Full-time',
@@ -14,15 +14,15 @@ const roles = [
     desc: 'Own and evolve the core execution engine that powers thousands of enterprise workflows. You\'ll work on distributed systems, workflow orchestration, and the low-latency infrastructure Luthen runs on.',
   },
   {
-    title: 'Senior Software Engineer — Connectors',
+    title: 'Senior Software Engineer - Connectors',
     dept: 'Engineering',
     location: 'San Francisco, CA / Remote',
     type: 'Full-time',
     level: 'Senior',
-    desc: 'Build and maintain Luthen\'s library of 200+ enterprise system connectors — from SAP and Oracle to Salesforce and Workday. Deep integration engineering and API design.',
+    desc: 'Build and maintain Luthen\'s library of 400+ enterprise system connectors - from SAP and Oracle to Salesforce and Workday. Deep integration engineering and API design.',
   },
   {
-    title: 'ML Engineer — Intelligence Engine',
+    title: 'ML Engineer - Intelligence Engine',
     dept: 'Engineering',
     location: 'San Francisco, CA',
     type: 'Full-time',
@@ -30,15 +30,15 @@ const roles = [
     desc: 'Design and implement the pattern internalization algorithms that reduce workflow cost over time. Work at the intersection of LLMs, fine-tuning, and production inference infrastructure.',
   },
   {
-    title: 'Senior Product Manager — Builder',
+    title: 'Senior Product Manager - Builder',
     dept: 'Product',
     location: 'San Francisco, CA',
     type: 'Full-time',
     level: 'Senior',
-    desc: 'Define and ship the Builder engine roadmap — the visual workflow designer used by operations teams across enterprise customers. Customer obsession and a technical background required.',
+    desc: 'Define and ship the Builder engine roadmap - the visual workflow designer used by operations teams across enterprise customers. Customer obsession and a technical background required.',
   },
   {
-    title: 'Enterprise Account Executive — EMEA',
+    title: 'Enterprise Account Executive - EMEA',
     dept: 'Sales',
     location: 'London, UK',
     type: 'Full-time',
@@ -46,7 +46,7 @@ const roles = [
     desc: 'Own and grow a portfolio of enterprise accounts across the EMEA region. You\'ll run complex multi-stakeholder deals with VP-level buyers in manufacturing, logistics, and financial services.',
   },
   {
-    title: 'Enterprise Account Executive — North America',
+    title: 'Enterprise Account Executive - North America',
     dept: 'Sales',
     location: 'New York, NY / San Francisco, CA',
     type: 'Full-time',
@@ -54,7 +54,7 @@ const roles = [
     desc: 'Drive new business with Fortune 1000 companies. You\'ll work closely with the solutions engineering team to run technical evaluations and close multi-year enterprise contracts.',
   },
   {
-    title: 'Customer Success Manager — Manufacturing & Logistics',
+    title: 'Customer Success Manager - Manufacturing & Logistics',
     dept: 'Customer Success',
     location: 'Remote (US)',
     type: 'Full-time',
@@ -67,7 +67,7 @@ const roles = [
     location: 'San Francisco, CA / New York, NY',
     type: 'Full-time',
     level: 'Mid / Senior',
-    desc: 'Partner with AEs to run technical evaluations and proof-of-value engagements. You\'ll be the technical voice in the room — configuring live workflows and connecting to customer systems.',
+    desc: 'Partner with AEs to run technical evaluations and proof-of-value engagements. You\'ll be the technical voice in the room - configuring live workflows and connecting to customer systems.',
   },
   {
     title: 'Head of Product Marketing',
