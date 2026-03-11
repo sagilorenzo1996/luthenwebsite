@@ -43,7 +43,7 @@ export default function Navbar() {
             </div>
           </li>
           <li><NavLink to="/solutions" className={({ isActive }) => isActive ? 'active' : ''}>Solutions</NavLink></li>
-          <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''}>Resources</NavLink></li>
+          {/* <li><NavLink to="/resources" className={({ isActive }) => isActive ? 'active' : ''}>Resources</NavLink></li> */}
           <li><NavLink to="/pricing" className={({ isActive }) => isActive ? 'active' : ''}>Pricing</NavLink></li>
         </ul>
 
@@ -78,7 +78,7 @@ export default function Navbar() {
           <Link to="/pricing" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Pricing</Link>
         </div>
         <Link to="/solutions" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Solutions</Link>
-        <Link to="/resources" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Resources</Link>
+        {/* <Link to="/resources" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Resources</Link> */}
         <Link to="/pricing" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Pricing</Link>
         <div className="nav-mobile-divider" />
         <Link to="/about" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>About</Link>

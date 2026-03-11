@@ -38,7 +38,7 @@ export default function Footer() {
             <li><Link to="/solutions#finance">Financial Services</Link></li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <div className="f-col-hdr">Resources</div>
           <ul className="f-links">
             <li><Link to="/resources">Documentation</Link></li>
@@ -46,7 +46,7 @@ export default function Footer() {
             <li><Link to="/resources#blog">Blog</Link></li>
             <li><Link to="/docs">API Reference</Link></li>
           </ul>
-        </div>
+        </div> */}
         <div>
           <div className="f-col-hdr">Company</div>
           <ul className="f-links">

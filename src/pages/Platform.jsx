@@ -81,7 +81,7 @@ export default function Platform() {
               <h2 className="s-h2">Intelligence</h2>
               <p className="s-body" style={{ marginBottom: 32 }}>Governed AI reasoning with an improving cost curve. Unlike per-call API pricing, Luthen's Intelligence engine internalizes your patterns — making every workflow cheaper as it runs.</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
-                {['Governed AI with enterprise-grade auditability','Pattern internalization reduces marginal cost over time','Works with Claude, GPT-4, Gemini, and private models','Full inference explainability and decision logs'].map(feat => (
+                {['Governed AI with enterprise-grade auditability','Pattern internalization reduces marginal cost over time','Works with Claude, GPT-4, Gemini, Grok, and private models','Full inference explainability and decision logs'].map(feat => (
                   <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14, fontWeight: 500, color: 'var(--g600)' }}>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l3.5 3.5 7.5-7" stroke="#0A0A0F" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
                     {feat}
