@@ -23,9 +23,9 @@ export default function Footer() {
         <div>
           <div className="f-col-hdr">Platform</div>
           <ul className="f-links">
-            <li><Link to="/platform">Connect</Link></li>
-            <li><Link to="/platform#intelligence">Intelligence</Link></li>
-            <li><Link to="/platform#builder">Builder</Link></li>
+            <li><Link to="/platform/connect">Connect</Link></li>
+            <li><Link to="/platform/intelligence">Intelligence</Link></li>
+            <li><Link to="/platform/builder">Builder</Link></li>
             <li><Link to="/pricing">Pricing</Link></li>
           </ul>
         </div>

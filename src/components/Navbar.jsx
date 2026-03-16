@@ -29,16 +29,16 @@ export default function Navbar() {
 
         <ul className="nav-links">
           <li className="nav-item-dropdown">
-            <NavLink to="/platform" className={({ isActive }) => isActive ? 'active' : ''}>
+            <NavLink to="/platform/connect" className={({ isActive }) => isActive ? 'active' : ''}>
               Platform
               <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
                 <path d="M2 3.5l3 3 3-3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </NavLink>
             <div className="dropdown-menu">
-              <Link to="/platform" className="dropdown-link">Connect</Link>
-              <Link to="/platform#intelligence" className="dropdown-link">Intelligence</Link>
-              <Link to="/platform#builder" className="dropdown-link">Builder</Link>
+              <Link to="/platform/connect" className="dropdown-link">Connect</Link>
+              <Link to="/platform/intelligence" className="dropdown-link">Intelligence</Link>
+              <Link to="/platform/builder" className="dropdown-link">Builder</Link>
               <Link to="/pricing" className="dropdown-link">Pricing</Link>
             </div>
           </li>
@@ -70,11 +70,11 @@ export default function Navbar() {
       </nav>
 
       <div className={`nav-mobile-menu${menuOpen ? ' open' : ''}`}>
-        <Link to="/platform" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Platform</Link>
+        <Link to="/platform/connect" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Platform</Link>
         <div className="nav-mobile-sublinks">
-          <Link to="/platform" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Connect</Link>
-          <Link to="/platform#intelligence" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Intelligence</Link>
-          <Link to="/platform#builder" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Builder</Link>
+          <Link to="/platform/connect" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Connect</Link>
+          <Link to="/platform/intelligence" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Intelligence</Link>
+          <Link to="/platform/builder" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Builder</Link>
           <Link to="/pricing" className="nav-mobile-sublink" onClick={() => setMenuOpen(false)}>Pricing</Link>
         </div>
         <Link to="/solutions" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Solutions</Link>

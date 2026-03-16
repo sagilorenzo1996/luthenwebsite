@@ -112,7 +112,7 @@ export default function Home() {
               Schedule a Solution Blueprint
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </Link>
-            <Link to="/platform" className="btn-hero-ghost">Watch a Workflow Run</Link>
+            <Link to="/platform/connect" className="btn-hero-ghost">Watch a Workflow Run</Link>
           </div>
           <p className="hero-micro">·&nbsp; Dedicated onboarding &nbsp;·&nbsp; Custom SLA available</p>
           <div className="hero-badges">
@@ -390,7 +390,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Link to="/platform" className="btn-console">
+            <Link to="/platform/connect" className="btn-console">
               See Full Workflow
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </Link>

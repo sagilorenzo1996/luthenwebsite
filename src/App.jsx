@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './pages/Home'
-import Platform from './pages/Platform'
+import PlatformConnect from './pages/PlatformConnect'
+import PlatformIntelligence from './pages/PlatformIntelligence'
+import PlatformBuilder from './pages/PlatformBuilder'
 import Solutions from './pages/Solutions'
 import Pricing from './pages/Pricing'
 // import Resources from './pages/Resources'
@@ -31,7 +33,10 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/platform" element={<Platform />} />
+          <Route path="/platform" element={<Navigate to="/platform/connect" replace />} />
+          <Route path="/platform/connect" element={<PlatformConnect />} />
+          <Route path="/platform/intelligence" element={<PlatformIntelligence />} />
+          <Route path="/platform/builder" element={<PlatformBuilder />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/pricing" element={<Pricing />} />
           {/* <Route path="/resources" element={<Resources />} /> */}
