@@ -4,128 +4,124 @@ import ScrollFadeIn from '../components/ScrollFadeIn'
 export default function PlatformConnect() {
   return (
     <>
-      <section className="hero">
-        <div>
-          <p className="hero-eyebrow"><span className="hero-eyebrow-dot"></span>Enterprise Autonomy Layer</p>
-          <h1>Upgrade Execution.<br/>Not Your Stack.</h1>
-          <p className="hero-sub">Deploy intelligent, governed workflows across your existing systems without migration and without disruption.</p>
+      <section className="hero" style={{ background: 'linear-gradient(180deg, #fff 0%, #FCFEF7 100%)', padding: '110px 24px 96px' }}>
+        <div style={{ maxWidth: 960, margin: '0 auto', textAlign: 'left' }}>
+          <p className="hero-eyebrow" style={{ marginBottom: 16 }}>
+            LUTHEN CONNECT
+          </p>
+          <h1 style={{ color: 'var(--black)', marginBottom: 20 }}>
+            Connect Legacy. Move Nothing.
+          </h1>
+          <p className="hero-sub" style={{ color: 'rgba(0,0,0,0.58)', maxWidth: 860, marginBottom: 32 }}>
+            Activate <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>ERP</span>,{' '}
+            <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>SQL</span>,{' '}
+            <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>SAP</span>,{' '}
+            <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>Oracle</span>, and{' '}
+            line-of-business systems where they live - without rip-and-replace migration.
+          </p>
           <div className="hero-ctas">
             <Link to="/demo" className="btn-hero">
               Schedule a Solution Blueprint
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </Link>
-            <Link to="/demo" className="btn-hero-ghost">See Connect in Action</Link>
+            <Link to="/demo" className="btn-hero-ghost" style={{ borderColor: 'rgba(114,203,214,0.6)', background: 'rgba(114,203,214,0.08)' }}>
+              Request Architecture Pack
+            </Link>
           </div>
-          <p className="hero-micro">Dedicated onboarding and enterprise governance by default.</p>
-          <div className="hero-badges">
-            <span className="hero-badge"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5l3 3 7-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> No migration required</span>
-            <span className="hero-badge"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5l3 3 7-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> 400+ connectors</span>
-            <span className="hero-badge"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M1.5 6.5l3 3 7-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg> Audit-ready</span>
-          </div>
-        </div>
-        <div style={{ background: 'rgba(255,255,255,0.78)', border: '1px solid var(--g100)', borderRadius: 'var(--r-xl)', padding: 28 }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
-            <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--g400)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Live Connect Monitor</div>
-            <span className="wf-live">Live</span>
-          </div>
-          {[
-            { name: 'SAP ERP', status: 'connected', latency: '12ms' },
-            { name: 'Oracle Fusion', status: 'connected', latency: '8ms' },
-            { name: 'Salesforce CRM', status: 'connected', latency: '15ms' },
-            { name: 'Workday HCM', status: 'syncing', latency: '--' },
-          ].map(conn => (
-            <div key={conn.name} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 12px', borderRadius: 'var(--r-md)', background: '#fff', border: '1px solid var(--g100)', marginBottom: 8 }}>
-              <span style={{ fontWeight: 600, fontSize: 13 }}>{conn.name}</span>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <span style={{ fontSize: 12, color: conn.status === 'connected' ? '#16a34a' : 'var(--g400)', fontWeight: 600 }}>{conn.status}</span>
-                <span style={{ fontSize: 12, color: 'var(--g400)', fontFamily: 'monospace' }}>{conn.latency}</span>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
       <ScrollFadeIn>
-        <section className="tax-s s">
-          <div className="center" style={{ marginBottom: 52 }}>
-            <div className="s-label">The Problem</div>
-            <h2 className="s-h2">The Enterprise AI Tax</h2>
-            <p className="s-body">Three structural forces are draining ROI from enterprise AI initiatives before a single workflow ships.</p>
-          </div>
-          <div className="grid-3">
-            {[
-              {
-                icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 17L17 3M17 3H9M17 3v8" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-                title: 'Migration Tax',
-                desc: 'Replacing legacy systems costs millions and takes years, creating execution gaps that compound over time.',
-                outcome: 'Avg. $4.2M rip-and-replace cost',
-              },
-              {
-                icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M13 6l3 4-3 4M7 6L4 10l3 4" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-                title: 'Linear AI Cost',
-                desc: 'Every external API call costs the same forever, with no compounding efficiency curve.',
-                outcome: 'No improvement over 18 months',
-              },
-              {
-                icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 2L3 13h8l-1 7 9-11h-8l1-7z" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-                title: 'Rigidity Tax',
-                desc: 'Workflows are brittle and every change requires dev cycles, slowing business execution.',
-                outcome: '6-12 week change cycles',
-              },
-            ].map((c, i) => (
-              <div className="card" key={i} style={{ '--i': i }}>
-                <div className="card-icon">{c.icon}</div>
-                <h3>{c.title}</h3>
-                <p>{c.desc}</p>
-                <div className="card-outcome">
-                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none"><path d="M1.5 5.5l3 3 5-5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  {c.outcome}
-                </div>
-              </div>
-            ))}
+        <section className="s" style={{ background: 'linear-gradient(180deg, #F9F9F8 0%, #F4FAFB 100%)', padding: '108px 24px' }}>
+          <div style={{ maxWidth: 960, margin: '0 auto', textAlign: 'left' }}>
+            <h2 className="s-h2" style={{ color: 'var(--black)', maxWidth: 820, marginBottom: 22 }}>
+              Legacy Is Not the Problem. Inaccessibility Is.
+            </h2>
+            <p className="s-body" style={{ color: 'rgba(0,0,0,0.58)', maxWidth: 860 }}>
+              Most enterprises don't need new systems. They need a consistent way to activate{' '}
+              <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>what</span> already exists - without
+              destabilizing <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>infrastructure</span>.
+            </p>
           </div>
         </section>
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="s" style={{ background: '#fff' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'center' }}>
-            <div>
-              <div className="s-label">Engine 01</div>
-              <h2 className="s-h2">Connect</h2>
-              <p className="s-body" style={{ marginBottom: 32 }}>Activate your legacy systems without migration. Luthen's Connect engine creates secure, governed integrations that go live in days, not months. No API rewrites, no rip-and-replace.</p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 32 }}>
-                {['400+ pre-built connectors for enterprise systems', 'Secure, encrypted data channels with zero trust', 'Role-based access control at the connector level', 'Live in days with dedicated implementation support'].map(feat => (
-                  <div key={feat} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: 14, fontWeight: 500, color: 'var(--g600)' }}>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l3.5 3.5 7.5-7" stroke="var(--turquoise)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                    {feat}
+        <section className="s" style={{ background: '#DCFF9B', padding: '108px 24px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 56 }}>
+              How Luthen Connect Activates Legacy
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'start' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
+                <div style={{ border: '1px solid var(--g200)', borderRadius: 'var(--r-lg)', background: '#fff', padding: 20 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--black)', marginBottom: 14 }}>Existing Systems</div>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                    {['ERP', 'SQL', 'SAP', 'Oracle', 'CRM'].map(tag => (
+                      <span key={tag} style={{ fontSize: 12, color: 'var(--g600)', fontWeight: 600, background: 'var(--g50)', border: '1px solid var(--g200)', borderRadius: 999, padding: '6px 12px' }}>
+                        {tag}
+                      </span>
+                    ))}
                   </div>
-                ))}
+                </div>
+                <div style={{ textAlign: 'center', fontSize: 22, lineHeight: 1, color: 'var(--g400)', margin: '16px 0' }}>&darr;</div>
+                <div style={{ border: '1px solid var(--turquoise)', borderRadius: 'var(--r-lg)', background: 'linear-gradient(180deg, #F8FFFE 0%, #F1FBFC 100%)', padding: 20 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--black)', marginBottom: 12 }}>Semantic Bridge</div>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {['Entity mapping', 'Relationship interpretation', 'Policy boundaries'].map(item => (
+                      <div key={item} style={{ fontSize: 13, color: 'var(--g600)', display: 'flex', gap: 8 }}>
+                        <span style={{ color: 'var(--turquoise)', fontWeight: 700 }}>&bull;</span>
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ textAlign: 'center', fontSize: 22, lineHeight: 1, color: 'var(--g400)', margin: '16px 0' }}>&darr;</div>
+                <div style={{ border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-lg)', background: '#fff', padding: 20 }}>
+                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--black)' }}>AI-Ready & Workflow-Ready Execution</div>
+                </div>
               </div>
-              <Link to="/demo" className="btn-hero">Request a Connect Demo
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-              </Link>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--black)', marginBottom: 6 }}>Existing Systems</div>
+                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>
+                    Your current infrastructure remains unchanged and operational.
+                  </p>
+                </div>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--black)', marginBottom: 6 }}>Semantic Bridge</div>
+                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>
+                    Creates consistent access patterns and enforces governance without migration.
+                  </p>
+                </div>
+                <div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--black)', marginBottom: 6 }}>Ready Execution</div>
+                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>
+                    Systems become accessible for governed workflows and intelligent automation.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div style={{ background: 'var(--g50)', borderRadius: 'var(--r-xl)', padding: 36, border: '1px solid var(--g100)' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24 }}>
-                <div className="card-icon icon-blue" style={{ margin: 0 }}>
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="2.5" stroke="#3b82f6" strokeWidth="1.5"/><path d="M10 2v2M10 16v2M2 10h2M16 10h2M4.34 4.34l1.41 1.41M14.25 14.25l1.41 1.41M4.34 15.66l1.41-1.41M14.25 5.75l1.41-1.41" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round"/></svg>
-                </div>
-                <span style={{ fontWeight: 700, fontSize: 16 }}>Active Connections</span>
-              </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="s" style={{ background: '#fff', padding: '104px 24px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 40 }}>
+              What Changes After Activation
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: 16 }}>
               {[
-                { name: 'SAP ERP', status: 'connected', latency: '12ms' },
-                { name: 'Oracle Fusion', status: 'connected', latency: '8ms' },
-                { name: 'Salesforce CRM', status: 'connected', latency: '15ms' },
-                { name: 'Workday HCM', status: 'syncing', latency: '--' },
-              ].map(conn => (
-                <div key={conn.name} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 14px', borderRadius: 'var(--r-md)', background: '#fff', border: '1px solid var(--g100)', marginBottom: 8 }}>
-                  <span style={{ fontWeight: 600, fontSize: 13.5 }}>{conn.name}</span>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <span style={{ fontSize: 12, color: conn.status === 'connected' ? '#16a34a' : 'var(--g400)', fontWeight: 600 }}>{conn.status}</span>
-                    <span style={{ fontSize: 12, color: 'var(--g400)', fontFamily: 'monospace' }}>{conn.latency}</span>
-                  </div>
-                </div>
+                ['No Migration Required', 'Modernize incrementally.'],
+                ['AI-Ready Data Access', 'Structured and interpretable.'],
+                ['Governed Execution', 'Operate inside policy boundaries.'],
+                ['Workflow Acceleration', 'Automation across systems.']
+              ].map(([title, body]) => (
+                <article key={title} style={{ background: '#fff', border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-lg)', padding: '24px 20px' }}>
+                  <h3 style={{ margin: '0 0 8px', fontSize: 19, lineHeight: 1.35, color: 'var(--black)' }}>{title}</h3>
+                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 15, lineHeight: 1.65 }}>{body}</p>
+                </article>
               ))}
             </div>
           </div>
@@ -133,13 +129,140 @@ export default function PlatformConnect() {
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="cta-s">
-          <div className="cta-s-lbl">Platform</div>
-          <h2 className="cta-h2">Explore More Engines</h2>
-          <p className="cta-sub">See how Intelligence and Builder complete the autonomy layer.</p>
+        <section className="s" style={{ background: '#DCFF9B', padding: '104px 24px' }}>
+          <div style={{ maxWidth: 980, margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56 }}>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: '0.03em', color: 'var(--g400)', marginBottom: 20 }}>
+                  Before Connect
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 16, color: 'var(--g400)', fontSize: 19, lineHeight: 1.45 }}>
+                  <div>Tickets to IT</div>
+                  <div>Manual SQL queries</div>
+                  <div>Static dashboards</div>
+                  <div>Brittle integrations</div>
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: '0.03em', color: 'var(--black)', marginBottom: 20 }}>
+                  After Connect
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 16, fontSize: 19, lineHeight: 1.45, fontWeight: 700, color: 'var(--black)' }}>
+                  <div>Intent-driven execution</div>
+                  <div style={{ color: 'var(--turquoise)' }}>Cross-system workflows</div>
+                  <div>Repeatable behavior</div>
+                  <div style={{ color: 'var(--turquoise)' }}>Traceable outcomes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="s" style={{ background: 'linear-gradient(180deg, #F9F9F8 0%, #F3F8F9 100%)', padding: '108px 24px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 52 }}>
+              Designed for Enterprise Infrastructure
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 24 }}>
+              <div style={{ background: '#fff', border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-lg)', padding: 28 }}>
+                <div style={{ width: 42, height: 42, borderRadius: 12, background: 'rgba(114,203,214,0.12)', border: '1px solid rgba(114,203,214,0.4)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
+                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                    <rect x="4" y="4" width="16" height="6" rx="1.5" stroke="#267A84" strokeWidth="1.5"/>
+                    <rect x="4" y="14" width="16" height="6" rx="1.5" stroke="#267A84" strokeWidth="1.5"/>
+                    <circle cx="8" cy="7" r="1" fill="#267A84"/>
+                    <circle cx="8" cy="17" r="1" fill="#267A84"/>
+                  </svg>
+                </div>
+                <h3 style={{ fontSize: 18, lineHeight: 1.35, marginBottom: 8, color: 'var(--black)' }}>On-Prem / Private Cloud</h3>
+                <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>Deploy within existing boundaries.</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid rgba(186,219,160,0.7)', borderRadius: 'var(--r-lg)', padding: 28 }}>
+                <div style={{ width: 42, height: 42, borderRadius: 12, background: 'rgba(186,219,160,0.2)', border: '1px solid rgba(186,219,160,0.7)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
+                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3l7 3v5c0 4.5-2.7 7.8-7 10-4.3-2.2-7-5.5-7-10V6l7-3z" stroke="#4E7E37" strokeWidth="1.5" strokeLinejoin="round"/>
+                    <path d="M9.5 12.2l1.8 1.8 3.4-3.4" stroke="#4E7E37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <h3 style={{ fontSize: 18, lineHeight: 1.35, marginBottom: 8, color: 'var(--black)' }}>Integrates With Existing Identity</h3>
+                <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>Works with enterprise SSO and access controls.</p>
+              </div>
+              <div style={{ background: '#fff', border: '1px solid rgba(206,224,202,0.95)', borderRadius: 'var(--r-lg)', padding: 28 }}>
+                <div style={{ width: 42, height: 42, borderRadius: 12, background: 'rgba(206,224,202,0.35)', border: '1px solid rgba(206,224,202,0.95)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
+                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
+                    <path d="M20 7a8 8 0 0 0-13.66-2.83L4 6.5M4 6.5V3m0 3.5h3.5M4 17a8 8 0 0 0 13.66 2.83L20 17.5M20 17.5V21m0-3.5h-3.5" stroke="#4B6250" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+                <h3 style={{ fontSize: 18, lineHeight: 1.35, marginBottom: 8, color: 'var(--black)' }}>No Rip-and-Replace</h3>
+                <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>Gradual rollout possible.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="s" style={{ background: '#fff', padding: '104px 24px' }}>
+          <div style={{ maxWidth: 980, margin: '0 auto', textAlign: 'left' }}>
+            <h2 className="s-h2" style={{ color: 'var(--black)', marginBottom: 28 }}>
+              Built for Complex System Environments
+            </h2>
+            <ul style={{ margin: 0, paddingLeft: 22, display: 'flex', flexDirection: 'column', gap: 12, color: 'var(--g600)', fontSize: 16, lineHeight: 1.7 }}>
+              <li>
+                Supports <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>relational</span> and <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>enterprise systems</span>
+              </li>
+              <li>
+                <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>Policy-based</span> access enforcement
+              </li>
+              <li>
+                <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>Event-capable</span> integration
+              </li>
+              <li>
+                Works alongside existing <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>CI/CD</span> and <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>monitoring</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="s" style={{ background: 'linear-gradient(180deg, #F9F9F8 0%, #F3F8F9 100%)', padding: '108px 24px' }}>
+          <div style={{ maxWidth: 980, margin: '0 auto', textAlign: 'left' }}>
+            <h2 className="s-h2" style={{ color: 'var(--black)', marginBottom: 16 }}>
+              Connect Is the Foundation.
+            </h2>
+            <p className="s-body" style={{ color: 'var(--g600)', maxWidth: 900, marginBottom: 30 }}>
+              Connect activates systems. Intelligence applies governed reasoning. Builder ships new capabilities.
+              Together, they form the autonomy layer.
+            </p>
+            <div style={{ border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-xl)', background: 'linear-gradient(180deg, #F8FBFB 0%, #F3F8F9 100%)', padding: '18px 16px' }}>
+              <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--g600)', marginBottom: 12 }}>
+                Luthen Platform
+              </div>
+              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+                <span style={{ padding: '10px 16px', borderRadius: 999, border: '1px solid rgba(114,203,214,0.55)', background: 'rgba(114,203,214,0.25)', color: 'var(--black)', fontSize: 14, fontWeight: 700 }}>
+                  Connect
+                </span>
+                <Link to="/platform/intelligence" style={{ textDecoration: 'none', padding: '10px 16px', borderRadius: 999, border: '1px solid rgba(114,203,214,0.45)', background: '#fff', color: 'var(--black)', fontSize: 14, fontWeight: 600 }}>
+                  Intelligence
+                </Link>
+                <Link to="/platform/builder" style={{ textDecoration: 'none', padding: '10px 16px', borderRadius: 999, border: '1px solid rgba(114,203,214,0.45)', background: '#fff', color: 'var(--black)', fontSize: 14, fontWeight: 600 }}>
+                  Builder
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="cta-s" style={{ background: '#fff' }}>
+          <h2 className="cta-h2">Activate Your Existing Systems.</h2>
+          <p className="cta-sub">Modernize execution without destabilizing your stack.</p>
           <div className="cta-btns">
-            <Link to="/platform/intelligence" className="btn-hero">Intelligence</Link>
-            <Link to="/platform/builder" className="btn-hero-ghost">Builder</Link>
+            <Link to="/demo" className="btn-hero">Schedule a Solution Blueprint</Link>
+            <Link to="/platform" className="btn-hero-ghost" style={{ borderColor: 'rgba(114,203,214,0.6)', background: 'rgba(114,203,214,0.08)' }}>Explore the Platform</Link>
           </div>
         </section>
       </ScrollFadeIn>
