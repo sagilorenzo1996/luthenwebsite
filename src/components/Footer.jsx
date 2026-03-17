@@ -36,6 +36,7 @@ export default function Footer() {
             <li><Link to="/solutions#logistics">Logistics</Link></li>
             <li><Link to="/solutions#telecom">Telecom / Utilities</Link></li>
             <li><Link to="/solutions#finance">Financial Services</Link></li>
+            <li><Link to="/solutions#lab-management">Lab Management</Link></li>
           </ul>
         </div>
         {/* <div>

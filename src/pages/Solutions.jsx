@@ -59,6 +59,20 @@ const industries = [
     icon: <svg width="24" height="24" viewBox="0 0 20 20" fill="none"><rect x="2" y="5" width="16" height="12" rx="2" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M2 9h16" stroke="#0A0A0F" strokeWidth="1.5"/><path d="M6 13h3" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round"/></svg>,
   },
   {
+    id: 'lab-management',
+    label: 'Lab Management',
+    eyebrow: 'Industry Solution',
+    headline: 'Lab Management Autonomy',
+    desc: 'Streamline sample processing, automate compliance logging, and integrate LIMS data into real-time operational workflows — reducing manual entry and accelerating turnaround times.',
+    outcomes: [
+      'Automated sample routing and status tracking',
+      'Real-time compliance and audit logging',
+      'LIMS and instrument data orchestration',
+      'Governed approval chains for test results',
+    ],
+    icon: <svg width="24" height="24" viewBox="0 0 20 20" fill="none"><path d="M14.5 3H5.5L4 7v10h12V7l-1.5-4zM4 7h12M10 10v4M8 12h4" stroke="#0A0A0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
+  },
+  {
     id: 'custom',
     label: 'Custom Solutions',
     eyebrow: 'Tailored Solution',

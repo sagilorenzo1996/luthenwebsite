@@ -145,37 +145,6 @@ export default function PlatformConnect() {
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="s" style={{ background: '#DCFF9B', padding: '104px 24px' }}>
-          <div style={{ maxWidth: 980, margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56 }}>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: '0.03em', color: 'var(--g400)', marginBottom: 20 }}>
-                  Before Connect
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 16, color: 'var(--g400)', fontSize: 19, lineHeight: 1.45 }}>
-                  <div>Tickets to IT</div>
-                  <div>Manual SQL queries</div>
-                  <div>Static dashboards</div>
-                  <div>Brittle integrations</div>
-                </div>
-              </div>
-              <div>
-                <div style={{ fontSize: 14, fontWeight: 700, letterSpacing: '0.03em', color: 'var(--black)', marginBottom: 20 }}>
-                  After Connect
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 16, fontSize: 19, lineHeight: 1.45, fontWeight: 700, color: 'var(--black)' }}>
-                  <div>Intent-driven execution</div>
-                  <div style={{ color: 'var(--turquoise)' }}>Cross-system workflows</div>
-                  <div>Repeatable behavior</div>
-                  <div style={{ color: 'var(--turquoise)' }}>Traceable outcomes</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </ScrollFadeIn>
-
-      <ScrollFadeIn>
         <section className="s" style={{ background: '#fff', padding: 'clamp(72px,10vw,108px) 24px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
             <h2 className="s-h2 center" style={{ fontSize: 'clamp(32px,4vw,50px)', fontWeight: 700, lineHeight: 1.08, letterSpacing: '-1.6px', color: 'var(--black)', margin: '0 0 52px', textAlign: 'center' }}>
@@ -267,36 +236,6 @@ export default function PlatformConnect() {
                     </p>
                   </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </section>
-      </ScrollFadeIn>
-
-      <ScrollFadeIn>
-        <section className="s" style={{ background: 'linear-gradient(180deg, #F9F9F8 0%, #F3F8F9 100%)', padding: '108px 24px' }}>
-          <div style={{ maxWidth: 980, margin: '0 auto', textAlign: 'left' }}>
-            <h2 className="s-h2" style={{ color: 'var(--black)', marginBottom: 16 }}>
-              Connect Is the Foundation.
-            </h2>
-            <p className="s-body" style={{ color: 'var(--g600)', maxWidth: 900, marginBottom: 30 }}>
-              Connect activates systems. Intelligence applies governed reasoning. Builder ships new capabilities.
-              Together, they form the autonomy layer.
-            </p>
-            <div style={{ border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-xl)', background: 'linear-gradient(180deg, #F8FBFB 0%, #F3F8F9 100%)', padding: '18px 16px' }}>
-              <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--g600)', marginBottom: 12 }}>
-                Luthen Platform
-              </div>
-              <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-                <span style={{ padding: '10px 16px', borderRadius: 999, border: '1px solid rgba(114,203,214,0.55)', background: 'rgba(114,203,214,0.25)', color: 'var(--black)', fontSize: 14, fontWeight: 700 }}>
-                  Connect
-                </span>
-                <Link to="/platform/intelligence" style={{ textDecoration: 'none', padding: '10px 16px', borderRadius: 999, border: '1px solid rgba(114,203,214,0.45)', background: '#fff', color: 'var(--black)', fontSize: 14, fontWeight: 600 }}>
-                  Intelligence
-                </Link>
-                <Link to="/platform/builder" style={{ textDecoration: 'none', padding: '10px 16px', borderRadius: 999, border: '1px solid rgba(114,203,214,0.45)', background: '#fff', color: 'var(--black)', fontSize: 14, fontWeight: 600 }}>
-                  Builder
-                </Link>
               </div>
             </div>
           </div>
