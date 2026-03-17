@@ -1,13 +1,13 @@
-import { useEffect, useRef, useState } from 'react'
+﻿import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ScrollFadeIn from '../components/ScrollFadeIn'
 
-// ── Workflow card with cycling animation ──────────────────────────────────────
+// -- Workflow card with cycling animation --------------------------------------
 function WorkflowCard() {
   const steps = [
-    { label: 'Connect → SAP ERP' },
-    { label: 'Execute → Invoice Processing' },
-    { label: 'Internalize → Cost −40%' },
+    { label: 'Connect ? SAP ERP' },
+    { label: 'Execute ? Invoice Processing' },
+    { label: 'Internalize ? Cost -40%' },
   ]
   const [cur, setCur] = useState(2)
 
@@ -47,7 +47,7 @@ function WorkflowCard() {
         <span className="wf-foot-lbl">Avg. Time</span>
         <div className="wf-timing">
           <span className="wf-t-old">2.3s</span>
-          <span className="wf-t-arr">→</span>
+          <span className="wf-t-arr">?</span>
           <span className="wf-t-new">0.8s</span>
         </div>
       </div>
@@ -55,7 +55,7 @@ function WorkflowCard() {
   )
 }
 
-// ── Stat counter ──────────────────────────────────────────────────────────────
+// -- Stat counter --------------------------------------------------------------
 function StatItem({ num, suffix, label, src }) {
   const ref = useRef(null)
   useEffect(() => {
@@ -83,7 +83,7 @@ function StatItem({ num, suffix, label, src }) {
 export default function Home() {
   return (
     <>
-      {/* ── TRUST BAR ── */}
+      {/* -- TRUST BAR -- */}
       <div className="trust-bar">
         <div className="trust-item">
           <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="2" y="5.5" width="9" height="6.5" rx="1.2" stroke="currentColor" strokeWidth="1.1"/><path d="M4 5.5V4a2.5 2.5 0 015 0v1.5" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round"/></svg>
@@ -101,7 +101,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── HERO ── */}
+      {/* -- HERO -- */}
       <section className="hero">
         <div>
           <p className="hero-eyebrow"><span className="hero-eyebrow-dot"></span>Enterprise Autonomy Layer</p>
@@ -124,7 +124,7 @@ export default function Home() {
         <WorkflowCard />
       </section>
 
-      {/* ── TICKER ── */}
+      {/* -- TICKER -- */}
       <div className="ticker-wrap">
         <div className="ticker-inner">
           <span className="ticker-lbl">Ensure the best technology for your enterprise</span>
@@ -139,7 +139,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ── ENTERPRISE AI TAX ── */}
+      {/* -- ENTERPRISE AI TAX -- */}
       <ScrollFadeIn>
         <section className="tax-s s">
           <div className="center" style={{ marginBottom: 52 }}>
@@ -185,7 +185,7 @@ export default function Home() {
         </section>
       </ScrollFadeIn>
 
-      {/* ── SHIFT ── */}
+      {/* -- SHIFT -- */}
       <ScrollFadeIn>
         <section className="shift-s s">
           <div className="center" style={{ marginBottom: 52 }}>
@@ -198,9 +198,11 @@ export default function Home() {
               <div className="shift-col-hdr">Traditional Approach</div>
               <div className="shift-list">
                 {['Manual coordination','Static dashboards','Linear AI spend','Slow workflow delivery'].map(item => (
-                  <div className="shift-item" key={item}>
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 2l9 9M11 2L2 11" stroke="var(--g200)" strokeWidth="1.5" strokeLinecap="round"/></svg>
-                    {item}
+                  <div className="shift-item shift-item-x" key={item}>
+                    <span className="shift-mark shift-mark-x" aria-hidden="true">
+                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 2l9 9M11 2L2 11" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"/></svg>
+                    </span>
+                    <span>{item}</span>
                   </div>
                 ))}
               </div>
@@ -209,9 +211,11 @@ export default function Home() {
               <div className="shift-col-hdr">Autonomous Enterprise</div>
               <div className="shift-list">
                 {['Governed execution','Repeatable workflows','Improving cost curve','Capability generation'].map(item => (
-                  <div className="shift-item" key={item}>
-                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3.5 3.5 6-6.5" stroke="var(--black)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                    {item}
+                  <div className="shift-item shift-item-check" key={item}>
+                    <span className="shift-mark shift-mark-check" aria-hidden="true">
+                      <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><path d="M2 6.5l3.5 3.5 6-6.5" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                    </span>
+                    <span>{item}</span>
                   </div>
                 ))}
               </div>
@@ -220,82 +224,137 @@ export default function Home() {
         </section>
       </ScrollFadeIn>
 
-      {/* ── THREE ENGINES ── */}
+      {/* -- THREE ENGINES -- */}
       <ScrollFadeIn>
         <section className="eng-s s">
           <div className="center" style={{ marginBottom: 52 }}>
             <div className="s-label">Platform</div>
             <h2 className="s-h2">One Platform. Three Engines.</h2>
-            <p className="s-body">Each engine is production-ready and works independently — or as a unified autonomy layer across your enterprise.</p>
+            <p className="s-body">Each engine works standalone or together — delivering governed autonomy on top of what you already have.</p>
           </div>
-          <div className="grid-3">
-            <div className="card" style={{ '--i': 0 }}>
+          <div className="eng-grid">
+            <article className="engine-panel" style={{ '--i': 0 }}>
               <div className="card-icon icon-blue">
-                <img src="/assets/icons/pulse.svg" alt="Lens Icon" width="50" height="50" />
+                <img src="/assets/icons/pulse.svg" alt="Connect icon" width="50" height="50" />
               </div>
-              <h3>Connect</h3>
-              <p>Activate legacy systems without migration. Secure, governed integrations that go live in days, not months.</p>
-            </div>
-            <div className="card" style={{ '--i': 1 }}>
+              <h3 className="engine-title">Connect</h3>
+              <p className="engine-tagline">Bring legacy and modern systems into the AI era — fast and safely</p>
+              <ul className="engine-bullets">
+                <li>Activate SAP and Oracle in days.</li>
+                <li>Secure data flows with automatic audit trails.</li>
+                <li>No rip-and-replace requirements.</li>
+                <li>Real-time data access.</li>
+              </ul>
+              <p className="engine-note">Powered by a battle-tested integration layer.</p>
+            </article>
+            <article className="engine-panel" style={{ '--i': 1 }}>
               <div className="card-icon icon-purple">
-                <img src="/assets/icons/lens.svg" alt="Lens Icon" width="50" height="50" />
+                <img src="/assets/icons/lens.svg" alt="Intelligence icon" width="50" height="50" />
               </div>
-              <h3>Intelligence</h3>
-              <p>Governed reasoning with an improving cost curve. AI that learns your patterns and gets cheaper over time.</p>
-            </div>
-            <div className="card" style={{ '--i': 2 }}>
+              <h3 className="engine-title">Intelligence</h3>
+              <p className="engine-tagline">Talk to your enterprise data in plain English — answers get faster and cheaper every day</p>
+              <ul className="engine-bullets">
+                <li>Natural-language questions across your enterprise data.</li>
+                <li>Self-improving cached responses.</li>
+                <li>Speed acceleration over time.</li>
+                <li>Human-in-the-loop governance.</li>
+                <li>Strict platform rules.</li>
+              </ul>
+            </article>
+            <article className="engine-panel" style={{ '--i': 2 }}>
               <div className="card-icon icon-green">
-                <img src="/assets/icons/neurocore.svg" alt="Lens Icon" width="50" height="50" />
+                <img src="/assets/icons/neurocore.svg" alt="Builder icon" width="50" height="50" />
               </div>
-              <h3>Builder</h3>
-              <p>Turn intent into production workflows. Build, test, and deploy without writing infrastructure code.</p>
-            </div>
+              <h3 className="engine-title">Builder</h3>
+              <p className="engine-tagline">From intent to production-ready applications &amp; autonomous workflows — in minutes</p>
+              <ul className="engine-bullets">
+                <li>Generated CRUD APIs.</li>
+                <li>Runtime data model changes.</li>
+                <li>80% zero-boilerplate productivity.</li>
+                <li>Build structured apps and workflows.</li>
+                <li>Embed conversational intelligence.</li>
+              </ul>
+            </article>
           </div>
         </section>
       </ScrollFadeIn>
 
-      {/* ── HOW IT WORKS ── */}
+      {/* -- HOW IT WORKS -- */}
       <ScrollFadeIn>
         <section className="hiw-s s">
           <div className="center" style={{ marginBottom: 56 }}>
             <div className="s-label">Process</div>
-            <h2 className="s-h2">How It Works</h2>
-            <p className="s-body">Three steps from legacy system to autonomous execution — no rip-and-replace required.</p>
+            <h2 className="s-h2">How Luthen Works Together</h2>
+            <p className="s-body">One metadata foundation powers it all — adapt live, learn from every interaction, stay in complete control.</p>
           </div>
-          <div className="hiw-grid">
-            <div className="hiw-step">
-              <div className="hiw-num">01</div>
-              <div className="hiw-title">Connect</div>
-              <p className="hiw-desc">Integrate with your existing systems through secure, governed connections.</p>
-            </div>
-            <div className="hiw-conn">
-              <svg width="28" height="18" viewBox="0 0 28 18" fill="none"><path d="M4 9h20M18 3l6 6-6 6" stroke="var(--g200)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </div>
-            <div className="hiw-step">
-              <div className="hiw-num">02</div>
-              <div className="hiw-title">Execute</div>
-              <p className="hiw-desc">Deploy intelligent workflows that learn and adapt over time across your operations.</p>
-            </div>
-            <div className="hiw-conn">
-              <svg width="28" height="18" viewBox="0 0 28 18" fill="none"><path d="M4 9h20M18 3l6 6-6 6" stroke="var(--g200)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </div>
-            <div className="hiw-step">
-              <div className="hiw-num">03</div>
-              <div className="hiw-title">Internalize &amp; Scale</div>
-              <p className="hiw-desc">Improve efficiency, reduce costs, and expand capabilities continuously over time.</p>
-            </div>
+          <div className="workflow-flow">
+            {[
+              'Existing Systems',
+              'Connect — real-time data & events',
+              'Intelligence — ask questions & understand',
+              'Builder — create applications & execute workflows',
+              'Governed Outcomes & Continuous Improvement',
+            ].map((step, i) => (
+              <div key={step} className="workflow-step">
+                <div className="workflow-index">{String(i + 1).padStart(2, '0')}</div>
+                <p className="workflow-text">{step}</p>
+              </div>
+            ))}
           </div>
         </section>
       </ScrollFadeIn>
 
-      {/* ── STATS STRIP ── */}
+      {/* -- VALUE PROPOSITION -- */}
+      <ScrollFadeIn>
+        <section className="value-s s">
+          <div className="center" style={{ marginBottom: 52 }}>
+            <div className="s-label">Value</div>
+            <h2 className="s-h2">Why Teams Choose Luthen</h2>
+          </div>
+          <div className="grid-3">
+            {[
+              {
+                title: 'No Migration Needed',
+                desc: 'Layer intelligence and automation directly on your current infrastructure.',
+              },
+              {
+                title: 'Self-Improving Performance',
+                desc: 'The more you use it, the faster and more cost-effective it becomes.',
+              },
+              {
+                title: 'Governed by Design',
+                desc: 'Security, role-based access, audit trails and traceability — built in, not added later.',
+              },
+              {
+                title: 'Never Get Blocked',
+                desc: 'Start with no-code/low-code speed, extend with custom code whenever needed.',
+              },
+              {
+                title: 'Days Instead of Months',
+                desc: 'Integrations, insights and applications go live dramatically faster.',
+              },
+              {
+                title: 'No Lock-in',
+                desc: 'Open architecture. Bring your own team. Extend anywhere..',
+              },
+            ].map((item, i) => (
+              <div className="card value-card" key={item.title} style={{ '--i': i }}>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      {/* -- STATS STRIP -- */}
       <div className="stats-strip">
         <StatItem num="60" suffix="%" label="Reduction in production coordination time" />
         <StatItem num="2.9" suffix="×" label="Faster workflow delivery vs. traditional dev" />
         <StatItem num="40" suffix="%" label="Average cost reduction after 12-month internalization" />
       </div>
 
-      {/* ── COST CURVE ── */}
+      {/* -- COST CURVE -- */}
       <ScrollFadeIn>
         <section className="cost-s s">
           <div className="center" style={{ marginBottom: 40 }}>
@@ -333,7 +392,7 @@ export default function Home() {
                 <circle cx="498" cy="150" r="5" fill="#2563eb"/>
                 <line x1="498" y1="145" x2="498" y2="108" stroke="#2563eb" strokeWidth="1.2" strokeDasharray="3 2"/>
                 <rect x="456" y="90" width="84" height="20" rx="5" fill="#2563eb"/>
-                <text x="498" y="104" textAnchor="middle" fontSize="10.5" fill="#fff" fontFamily="Space Grotesk,sans-serif" fontWeight="600">−40% at month 12</text>
+                <text x="498" y="104" textAnchor="middle" fontSize="10.5" fill="#fff" fontFamily="Space Grotesk,sans-serif" fontWeight="600">-40% at month 12</text>
               </svg>
             </div>
             <div className="chart-leg">
@@ -345,7 +404,7 @@ export default function Home() {
         </section>
       </ScrollFadeIn>
 
-      {/* ── CONSOLE (DARK) ── */}
+      {/* -- CONSOLE (DARK) -- */}
       <ScrollFadeIn>
         <div className="console-s">
           <div className="console-wrap">
@@ -357,14 +416,14 @@ export default function Home() {
                 <span className="con-title-lbl">Workflow Console</span>
               </div>
               <div className="con-body">
-                <div className="cl"><span className="ci ci-g">✓</span><span className="ct-g">Connected to Oracle ERP</span></div>
-                <div className="cl"><span className="ci ci-g">✓</span><span className="ct-g">Workflow initialized: PO_APPROVAL_v2</span></div>
+                <div className="cl"><span className="ci ci-g">?</span><span className="ct-g">Connected to Oracle ERP</span></div>
+                <div className="cl"><span className="ci ci-g">?</span><span className="ct-g">Workflow initialized: PO_APPROVAL_v2</span></div>
                 <div className="con-div"></div>
-                <div className="cl"><span className="ci ci-y">○</span><span className="ct-y">Awaiting approval gate [Manager: J. Chen]</span></div>
-                <div className="cl"><span className="ci ci-a">→</span><span className="ct-w">Approved. Executing...</span></div>
+                <div className="cl"><span className="ci ci-y">?</span><span className="ct-y">Awaiting approval gate [Manager: J. Chen]</span></div>
+                <div className="cl"><span className="ci ci-a">?</span><span className="ct-w">Approved. Executing...</span></div>
                 <div className="con-div"></div>
-                <div className="cl"><span className="ci ci-g">✓</span><span className="ct-g">Transaction logged [TX-4829]</span></div>
-                <div className="cl"><span className="ci ci-g">✓</span><span className="ct-g">Audit trail updated</span></div>
+                <div className="cl"><span className="ci ci-g">?</span><span className="ct-g">Transaction logged [TX-4829]</span></div>
+                <div className="cl"><span className="ci ci-g">?</span><span className="ct-g">Audit trail updated</span></div>
               </div>
               <div className="con-footer">
                 <span className="con-foot-lbl">Execution Time</span>
@@ -398,7 +457,7 @@ export default function Home() {
         </div>
       </ScrollFadeIn>
 
-      {/* ── ARCHITECTURE ── */}
+      {/* -- ARCHITECTURE -- */}
       <ScrollFadeIn>
         <section className="arch-s s">
           <div className="center" style={{ marginBottom: 52 }}>
@@ -423,7 +482,7 @@ export default function Home() {
         </section>
       </ScrollFadeIn>
 
-      {/* ── INDUSTRIES ── */}
+      {/* -- INDUSTRIES -- */}
       <ScrollFadeIn>
         <section className="ops-s s">
           <div className="center" style={{ marginBottom: 52 }}>
@@ -453,7 +512,7 @@ export default function Home() {
         </section>
       </ScrollFadeIn>
 
-      {/* ── INTEGRATIONS ── */}
+      {/* -- INTEGRATIONS -- */}
       <ScrollFadeIn>
         <section className="int-s s">
           <div className="center" style={{ marginBottom: 40 }}>
@@ -482,11 +541,11 @@ export default function Home() {
               </span>
             ))}
           </div>
-          <p className="int-note">400+ connectors available. Don't see yours? <Link to="/contact">Request an integration →</Link></p>
+          <p className="int-note">400+ connectors available. Don't see yours? <Link to="/contact">Request an integration ?</Link></p>
         </section>
       </ScrollFadeIn>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* -- TESTIMONIALS -- */}
       <ScrollFadeIn>
         <section className="testi-s">
           {/*<div className="testi-header">*/}
@@ -521,29 +580,24 @@ export default function Home() {
         </section>
       </ScrollFadeIn>
 
-      {/* ── CTA ── */}
+      {/* -- CTA -- */}
       <ScrollFadeIn>
         <section className="cta-s">
           <div className="cta-s-lbl">Get Started</div>
-          <h2 className="cta-h2">Build Your Autonomy Layer.</h2>
-          <p className="cta-sub">Join enterprises running intelligent, governed workflows on Luthen.</p>
+          <h2 className="cta-h2">Ready to Upgrade Execution — Not Your Stack?</h2>
+          <p className="cta-sub">See what becomes possible when legacy systems, conversational intelligence and rapid application building work as one governed platform.</p>
           <div className="cta-btns">
             <Link to="/demo" className="btn-hero">
-              Schedule a Solution Blueprint
+              Book a Blueprint Session
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </Link>
-            <Link to="/demo" className="btn-hero-ghost">Take the Enterprise Autonomy Assessment</Link>
+            <Link to="/platform/builder" className="btn-hero-ghost">Explore the Builder First</Link>
+            <Link to="/demo" className="btn-hero-ghost">Request a Demo for Your Use Case</Link>
           </div>
-          <div className="cta-micro">
-            {['Dedicated onboarding team', 'Custom enterprise SLA available'].map(item => (
-              <span className="cta-micro-item" key={item}>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1.5 6l3 3 6-6" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                {item}
-              </span>
-            ))}
-          </div>
+          <p className="cta-tagline">Luthen — Build enterprise. Not boilerplate.</p>
         </section>
       </ScrollFadeIn>
     </>
   )
 }
+

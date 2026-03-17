@@ -7,121 +7,137 @@ export default function PlatformConnect() {
       <section className="hero" style={{ background: 'linear-gradient(180deg, #fff 0%, #FCFEF7 100%)', padding: '110px 24px 96px' }}>
         <div style={{ maxWidth: 960, margin: '0 auto', textAlign: 'left' }}>
           <p className="hero-eyebrow" style={{ marginBottom: 16 }}>
-            LUTHEN CONNECT
+            Luthen Connect
           </p>
           <h1 style={{ color: 'var(--black)', marginBottom: 20 }}>
-            Connect Legacy. Move Nothing.
+            Enterprise Integration Engine
           </h1>
-          <p className="hero-sub" style={{ color: 'rgba(0,0,0,0.58)', maxWidth: 860, marginBottom: 32 }}>
-            Activate <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>ERP</span>,{' '}
-            <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>SQL</span>,{' '}
-            <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>SAP</span>,{' '}
-            <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>Oracle</span>, and{' '}
-            line-of-business systems where they live - without rip-and-replace migration.
+          <p className="hero-sub" style={{ color: 'var(--black)', fontSize: 24, fontWeight: 600, maxWidth: 860, marginBottom: 20 }}>
+            Activate your existing systems with AI power — fast, safely, and without disruption.
           </p>
-          <div className="hero-ctas">
+          <div style={{ color: 'rgba(0,0,0,0.58)', fontSize: 18, maxWidth: 860, marginBottom: 32 }}>
+            <p style={{ margin: '0 0 8px' }}>Days to live integrations. No migration. No rip-and-replace.</p>
+            <p style={{ margin: 0 }}>Governed connections that feed real-time data into intelligence and workflows.</p>
+          </div>
+          <div className="hero-ctas" style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
             <Link to="/demo" className="btn-hero">
-              Schedule a Solution Blueprint
+              Request Live Demo
             </Link>
             <Link to="/demo" className="btn-hero-ghost" style={{ borderColor: 'rgba(114,203,214,0.6)', background: 'rgba(114,203,214,0.08)' }}>
-              Request Architecture Pack
+              See It in Action
+            </Link>
+            <Link to="/demo" className="btn-hero-ghost" style={{ borderColor: 'rgba(114,203,214,0.6)', background: 'rgba(114,203,214,0.08)' }}>
+              Get Started
             </Link>
           </div>
         </div>
       </section>
 
       <ScrollFadeIn>
-        <section className="s" style={{ background: 'linear-gradient(180deg, #F9F9F8 0%, #F4FAFB 100%)', padding: '108px 24px' }}>
-          <div style={{ maxWidth: 960, margin: '0 auto', textAlign: 'left' }}>
-            <h2 className="s-h2" style={{ color: 'var(--black)', maxWidth: 820, marginBottom: 22 }}>
-              Legacy Is Not the Problem. Inaccessibility Is.
+        <section className="s" style={{ background: '#fff', padding: '104px 24px' }}>
+          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 20 }}>
+              What Luthen Connect Delivers
             </h2>
-            <p className="s-body" style={{ color: 'rgba(0,0,0,0.58)', maxWidth: 860 }}>
-              Most enterprises don't need new systems. They need a consistent way to activate{' '}
-              <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>what</span> already exists - without
-              destabilizing <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>infrastructure</span>.
+            <p className="s-body center" style={{ color: 'rgba(0,0,0,0.58)', maxWidth: 860, margin: '0 auto 52px', textAlign: 'center', fontSize: 19 }}>
+              Bridge your current infrastructure directly into governed AI execution — no forklift upgrades required:
+            </p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24, marginBottom: 52 }}>
+              {[
+                {
+                  title: "Legacy & Modern Connectivity",
+                  body: "Connect to legacy and modern systems — SAP, Oracle, mainframes, custom ERPs, flat files, SOAP services, FTP drops, databases, cloud APIs and more"
+                },
+                {
+                  title: "Secure Data Governance",
+                  body: "Secure, governed data flows — automatic enforcement of your security policies and audit trails"
+                },
+                {
+                  title: "Real-time & Batch Access",
+                  body: "Real-time and batch access — pull or push data exactly when needed for insights and automation"
+                },
+                {
+                  title: "Pre-built Patterns",
+                  body: "Pre-built patterns for common enterprise scenarios — polling queues, transforming formats, handling exceptions — all configurable via metadata"
+                },
+                {
+                  title: "400+ Connectors",
+                  body: "400+ connectors available out-of-the-box — if yours isn't listed, we add it quickly"
+                },
+                {
+                  title: "No New Infrastructure",
+                  body: "No new infrastructure or expensive middleware — layer on top of what you already run"
+                }
+              ].map((item, i) => (
+                <div key={i} style={{ display: 'flex', gap: 16, background: '#F8FBFB', border: '1px solid rgba(114,203,214,0.3)', borderRadius: 'var(--r-lg)', padding: '24px' }}>
+                  <div style={{ flexShrink: 0, width: 24, height: 24, borderRadius: '50%', background: '#DCFF9B', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 2 }}>
+                    <svg width="14" height="11" viewBox="0 0 14 11" fill="none">
+                      <path d="M1 5.5L5 9.5L13 1.5" stroke="black" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 style={{ margin: '0 0 8px', fontSize: 18, fontWeight: 700, color: 'var(--black)' }}>{item.title}</h3>
+                    <p style={{ margin: 0, color: 'var(--g600)', fontSize: 15, lineHeight: 1.6 }}>{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <p style={{ textAlign: 'center', margin: 0, fontSize: 18, fontWeight: 600, color: 'var(--black)' }}>
+              Integrations go live in days because the hard parts are already solved.
             </p>
           </div>
         </section>
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="s" style={{ background: '#DCFF9B', padding: '108px 24px' }}>
+        <section className="s" style={{ background: '#F9F9F8', padding: '104px 24px', borderTop: '1px solid #eee' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 56 }}>
-              How Luthen Connect Activates Legacy
+            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 60, textAlign: 'center' }}>
+              How It Works
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'start' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'stretch' }}>
-                <div style={{ border: '1px solid var(--g200)', borderRadius: 'var(--r-lg)', background: '#fff', padding: 20 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--black)', marginBottom: 14 }}>Existing Systems</div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                    {['ERP', 'SQL', 'SAP', 'Oracle', 'CRM'].map(tag => (
-                      <span key={tag} style={{ fontSize: 12, color: 'var(--g600)', fontWeight: 600, background: 'var(--g50)', border: '1px solid var(--g200)', borderRadius: 999, padding: '6px 12px' }}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div style={{ textAlign: 'center', fontSize: 22, lineHeight: 1, color: 'var(--g400)', margin: '16px 0' }}>&darr;</div>
-                <div style={{ border: '1px solid var(--turquoise)', borderRadius: 'var(--r-lg)', background: 'linear-gradient(180deg, #F8FFFE 0%, #F1FBFC 100%)', padding: 20 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--black)', marginBottom: 12 }}>Semantic Bridge</div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {['Entity mapping', 'Relationship interpretation', 'Policy boundaries'].map(item => (
-                      <div key={item} style={{ fontSize: 13, color: 'var(--g600)', display: 'flex', gap: 8 }}>
-                        <span style={{ color: 'var(--turquoise)', fontWeight: 700 }}>&bull;</span>
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div style={{ textAlign: 'center', fontSize: 22, lineHeight: 1, color: 'var(--g400)', margin: '16px 0' }}>&darr;</div>
-                <div style={{ border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-lg)', background: '#fff', padding: 20 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--black)' }}>AI-Ready & Workflow-Ready Execution</div>
-                </div>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 22 }}>
-                <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--black)', marginBottom: 6 }}>Existing Systems</div>
-                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>
-                    Your current infrastructure remains unchanged and operational.
-                  </p>
-                </div>
-                <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--black)', marginBottom: 6 }}>Semantic Bridge</div>
-                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>
-                    Creates consistent access patterns and enforces governance without migration.
-                  </p>
-                </div>
-                <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--black)', marginBottom: 6 }}>Ready Execution</div>
-                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>
-                    Systems become accessible for governed workflows and intelligent automation.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </ScrollFadeIn>
-
-      <ScrollFadeIn>
-        <section className="s" style={{ background: '#fff', padding: '104px 24px' }}>
-          <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 40 }}>
-              What Changes After Activation
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: 16 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 32, position: 'relative' }}>
               {[
-                ['No Migration Required', 'Modernize incrementally.'],
-                ['AI-Ready Data Access', 'Structured and interpretable.'],
-                ['Governed Execution', 'Operate inside policy boundaries.'],
-                ['Workflow Acceleration', 'Automation across systems.']
-              ].map(([title, body]) => (
-                <article key={title} style={{ background: '#fff', border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-lg)', padding: '24px 20px' }}>
-                  <h3 style={{ margin: '0 0 8px', fontSize: 19, lineHeight: 1.35, color: 'var(--black)' }}>{title}</h3>
-                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 15, lineHeight: 1.65 }}>{body}</p>
-                </article>
+                {
+                  step: "1",
+                  title: "Map Your Systems Once",
+                  body: "Point to your sources — on-prem, cloud, legacy, custom — using simple, governed configuration."
+                },
+                {
+                  step: "2",
+                  title: "Platform Builds Secure Routes",
+                  body: "Auto-generates connections with your security rules, audit hooks, and transformation logic applied automatically."
+                },
+                {
+                  step: "3",
+                  title: "Data Flows in Real Time",
+                  body: "Feed clean, governed events and records directly into Intelligence for natural-language questions or Builder for applications and workflows."
+                },
+                {
+                  step: "4",
+                  title: "Adapt Without Downtime",
+                  body: "Change mappings, add sources, or update policies at runtime — no redeployment, no interruption."
+                }
+              ].map((item, i) => (
+                <div key={i} style={{ position: 'relative' }}>
+                  <div style={{ 
+                    fontSize: 48, 
+                    fontWeight: 800, 
+                    color: 'rgba(114,203,214,0.15)', 
+                    lineHeight: 1,
+                    marginBottom: 12,
+                    fontFamily: 'var(--font-mono, monospace)'
+                  }}>
+                    {item.step}
+                  </div>
+                  <h3 style={{ fontSize: 20, fontWeight: 700, color: 'var(--black)', marginBottom: 12, lineHeight: 1.3 }}>
+                    {item.title}
+                  </h3>
+                  <p style={{ margin: 0, color: 'var(--g600)', fontSize: 15, lineHeight: 1.6 }}>
+                    {item.body}
+                  </p>
+                </div>
               ))}
             </div>
           </div>
@@ -160,68 +176,99 @@ export default function PlatformConnect() {
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="s" style={{ background: 'linear-gradient(180deg, #F9F9F8 0%, #F3F8F9 100%)', padding: '108px 24px' }}>
+        <section className="s" style={{ background: '#fff', padding: 'clamp(72px,10vw,108px) 24px' }}>
           <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-            <h2 className="s-h2 center" style={{ color: 'var(--black)', marginBottom: 52 }}>
-              Designed for Enterprise Infrastructure
+            <h2 className="s-h2 center" style={{ fontSize: 'clamp(32px,4vw,50px)', fontWeight: 700, lineHeight: 1.08, letterSpacing: '-1.6px', color: 'var(--black)', margin: '0 0 52px', textAlign: 'center' }}>
+              Key Advantages
             </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: 24 }}>
-              <div style={{ background: '#fff', border: '1px solid rgba(114,203,214,0.35)', borderRadius: 'var(--r-lg)', padding: 28 }}>
-                <div style={{ width: 42, height: 42, borderRadius: 12, background: 'rgba(114,203,214,0.12)', border: '1px solid rgba(114,203,214,0.4)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
-                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
-                    <rect x="4" y="4" width="16" height="6" rx="1.5" stroke="#267A84" strokeWidth="1.5"/>
-                    <rect x="4" y="14" width="16" height="6" rx="1.5" stroke="#267A84" strokeWidth="1.5"/>
-                    <circle cx="8" cy="7" r="1" fill="#267A84"/>
-                    <circle cx="8" cy="17" r="1" fill="#267A84"/>
-                  </svg>
-                </div>
-                <h3 style={{ fontSize: 18, lineHeight: 1.35, marginBottom: 8, color: 'var(--black)' }}>On-Prem / Private Cloud</h3>
-                <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>Deploy within existing boundaries.</p>
-              </div>
-              <div style={{ background: '#fff', border: '1px solid rgba(186,219,160,0.7)', borderRadius: 'var(--r-lg)', padding: 28 }}>
-                <div style={{ width: 42, height: 42, borderRadius: 12, background: 'rgba(186,219,160,0.2)', border: '1px solid rgba(186,219,160,0.7)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
-                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 3l7 3v5c0 4.5-2.7 7.8-7 10-4.3-2.2-7-5.5-7-10V6l7-3z" stroke="#4E7E37" strokeWidth="1.5" strokeLinejoin="round"/>
-                    <path d="M9.5 12.2l1.8 1.8 3.4-3.4" stroke="#4E7E37" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <h3 style={{ fontSize: 18, lineHeight: 1.35, marginBottom: 8, color: 'var(--black)' }}>Integrates With Existing Identity</h3>
-                <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>Works with enterprise SSO and access controls.</p>
-              </div>
-              <div style={{ background: '#fff', border: '1px solid rgba(206,224,202,0.95)', borderRadius: 'var(--r-lg)', padding: 28 }}>
-                <div style={{ width: 42, height: 42, borderRadius: 12, background: 'rgba(206,224,202,0.35)', border: '1px solid rgba(206,224,202,0.95)', display: 'grid', placeItems: 'center', marginBottom: 16 }}>
-                  <svg width="21" height="21" viewBox="0 0 24 24" fill="none">
-                    <path d="M20 7a8 8 0 0 0-13.66-2.83L4 6.5M4 6.5V3m0 3.5h3.5M4 17a8 8 0 0 0 13.66 2.83L20 17.5M20 17.5V21m0-3.5h-3.5" stroke="#4B6250" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
-                <h3 style={{ fontSize: 18, lineHeight: 1.35, marginBottom: 8, color: 'var(--black)' }}>No Rip-and-Replace</h3>
-                <p style={{ margin: 0, color: 'var(--g600)', fontSize: 14, lineHeight: 1.7 }}>Gradual rollout possible.</p>
-              </div>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 24 }}>
+              {[
+                ['Days, Not Months', 'Integrations that typically take quarters launch in days — no heavy lifting or shifting required.'],
+                ['No Migration Tax', 'Avoid multimillion-dollar rip-and-replace projects. Keep running your core systems as-is.'],
+                ['Governed from the Start', 'Every connection inherits platform-wide security, role-based access, and full traceability.'],
+                ['Never Blocked by Compatibility', 'Broad coverage for legacy patterns + fast custom extensions when needed.'],
+                ['Unified with the Rest of Luthen', 'Real-time data powers self-improving conversational intelligence. Feeds directly into rapid application and workflow building. One foundation — connect once, enable autonomy everywhere.']
+              ].map(([title, body]) => (
+                <article key={title} style={{ 
+                  background: '#fff', 
+                  border: '1px solid rgba(114,203,214,0.35)', 
+                  borderRadius: 'var(--r-xl)', 
+                  padding: '32px 28px',
+                  boxShadow: '0 10px 20px rgba(0,0,0,0.03)'
+                }}>
+                  <h3 style={{ margin: '0 0 16px', fontSize: 22, fontWeight: 700, lineHeight: 1.3, color: 'var(--black)' }}>{title}</h3>
+                  <p style={{ margin: 0, fontSize: 16, lineHeight: 1.65, color: 'var(--g600)' }}>{body}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="s" style={{ background: '#fff', padding: '104px 24px' }}>
-          <div style={{ maxWidth: 980, margin: '0 auto', textAlign: 'left' }}>
-            <h2 className="s-h2" style={{ color: 'var(--black)', marginBottom: 28 }}>
-              Built for Complex System Environments
+        <section className="s" style={{ background: '#F8FBFB', padding: 'clamp(72px,10vw,108px) 24px', borderTop: '1px solid rgba(114,203,214,0.1)' }}>
+          <div style={{ maxWidth: 1160, margin: '0 auto' }}>
+            <h2 className="s-h2 center" style={{ fontSize: 'clamp(32px,4vw,50px)', fontWeight: 700, lineHeight: 1.08, letterSpacing: '-1.6px', color: 'var(--black)', margin: '0 0 52px', textAlign: 'center' }}>
+              Real-World Examples
             </h2>
-            <ul style={{ margin: 0, paddingLeft: 22, display: 'flex', flexDirection: 'column', gap: 12, color: 'var(--g600)', fontSize: 16, lineHeight: 1.7 }}>
-              <li>
-                Supports <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>relational</span> and <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>enterprise systems</span>
-              </li>
-              <li>
-                <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>Policy-based</span> access enforcement
-              </li>
-              <li>
-                <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>Event-capable</span> integration
-              </li>
-              <li>
-                Works alongside existing <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>CI/CD</span> and <span style={{ color: 'var(--turquoise)', fontWeight: 600 }}>monitoring</span>
-              </li>
-            </ul>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 24 }}>
+              {[
+                {
+                  title: "Finance Operations",
+                  body: "Connect legacy ERP for real-time invoice data → feed into Intelligence for natural-language audit queries → trigger Builder approval workflows — all governed and auditable."
+                },
+                {
+                  title: "Supply Chain",
+                  body: "Link mainframe inventory feeds → ask questions about stock levels in plain English → auto-generate replenishment dashboards — no data duplication or ETL overhead."
+                },
+                {
+                  title: "Sales & CRM",
+                  body: "Integrate on-prem CRM with cloud tools → enable conversational reporting across silos → build custom territory assignment apps — changes live without downtime."
+                }
+              ].map((item, i) => (
+                <article key={i} style={{ 
+                  background: '#fff', 
+                  border: '1px solid rgba(114,203,214,0.35)', 
+                  borderRadius: 'var(--r-xl)', 
+                  padding: '32px 28px',
+                  boxShadow: '0 10px 20px rgba(0,0,0,0.03)'
+                }}>
+                  <h3 style={{ margin: '0 0 16px', fontSize: 22, fontWeight: 700, lineHeight: 1.3, color: 'var(--black)' }}>{item.title}</h3>
+                  <p style={{ margin: 0, fontSize: 16, lineHeight: 1.65, color: 'var(--g600)' }}>{item.body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </ScrollFadeIn>
+
+      <ScrollFadeIn>
+        <section className="s" style={{ background: '#F8FBFB', padding: 'clamp(72px,10vw,112px) 24px', borderTop: '1px solid rgba(114,203,214,0.1)' }}>
+          <div style={{ maxWidth: 1040, margin: '0 auto' }}>
+            <h2 style={{ fontSize: 'clamp(32px,4vw,52px)', fontWeight: 700, lineHeight: 1.1, letterSpacing: '-1.8px', color: 'var(--black)', marginBottom: 28, textAlign: 'center' }}>
+              Why Connect Stands Out
+            </h2>
+
+            <div style={{ background: 'black', border: '1px solid rgba(114,203,214,0.42)', borderRadius: 'var(--r-xl)', padding: 'clamp(20px,3vw,28px)' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(290px, 1fr))', gap: 14 }}>
+                {[
+                  "Eliminates the biggest barrier to enterprise AI — legacy drag",
+                  "Delivers production-grade integrations without production-grade pain",
+                  "No vendor lock-in — open, extensible connections",
+                  "Continuous improvement when paired with Intelligence and Builder",
+                  "Enterprise-grade governance without added complexity"
+                ].map(point => (
+                  <div key={point} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                    <span style={{ marginTop: 2, width: 22, height: 22, borderRadius: 999, background: '#72CBD6', color: 'black', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: 14, fontWeight: 800, flexShrink: 0 }}>
+                      ✓
+                    </span>
+                    <p style={{ margin: 0, fontSize: 16, lineHeight: 1.68, color: 'rgba(255,255,255,0.92)', fontWeight: 500 }}>
+                      {point}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </ScrollFadeIn>
@@ -257,12 +304,69 @@ export default function PlatformConnect() {
       </ScrollFadeIn>
 
       <ScrollFadeIn>
-        <section className="cta-s" style={{ background: '#fff' }}>
-          <h2 className="cta-h2">Activate Your Existing Systems.</h2>
-          <p className="cta-sub">Modernize execution without destabilizing your stack.</p>
-          <div className="cta-btns">
-            <Link to="/demo" className="btn-hero">Schedule a Solution Blueprint</Link>
-            <Link to="/platform" className="btn-hero-ghost" style={{ borderColor: 'rgba(114,203,214,0.6)', background: 'rgba(114,203,214,0.08)' }}>Explore the Platform</Link>
+        <section style={{ 
+          background: 'var(--black)', 
+          padding: 'clamp(80px, 12vw, 130px) 24px', 
+          textAlign: 'center',
+          color: '#fff'
+        }}>
+          <div style={{ maxWidth: 980, margin: '0 auto' }}>
+            <h2 style={{ 
+              fontSize: 'clamp(36px, 5vw, 62px)', 
+              fontWeight: 700, 
+              lineHeight: 1.05, 
+              letterSpacing: '-2px', 
+              margin: '0 0 16px' 
+            }}>
+              Ready to Connect?
+            </h2>
+            <p style={{ 
+              fontSize: 'clamp(18px, 2.2vw, 22px)', 
+              lineHeight: 1.5, 
+              color: 'rgba(255,255,255,0.7)', 
+              maxWidth: 700, 
+              margin: '0 auto 48px' 
+            }}>
+              See how your systems become the foundation for governed autonomy in days.
+            </p>
+            <div style={{ 
+              display: 'flex', 
+              flexWrap: 'wrap', 
+              gap: 16, 
+              justifyContent: 'center',
+              marginBottom: 64
+            }}>
+              <Link to="/demo" className="btn-hero" style={{ borderRadius: 999, minWidth: 240 }}>
+                Schedule a Blueprint Session
+              </Link>
+              <Link to="/platform" className="btn-hero-ghost" style={{ 
+                borderRadius: 999, 
+                minWidth: 240,
+                color: '#fff',
+                borderColor: 'rgba(255,255,255,0.3)',
+                background: 'rgba(255,255,255,0.05)'
+              }}>
+                Explore Integration Examples
+              </Link>
+              <Link to="/contact" className="btn-hero-ghost" style={{ 
+                borderRadius: 999, 
+                minWidth: 240,
+                color: '#fff',
+                borderColor: 'rgba(255,255,255,0.3)',
+                background: 'rgba(255,255,255,0.05)'
+              }}>
+                Request Your System Check
+              </Link>
+            </div>
+            <div style={{ 
+              fontSize: 14, 
+              fontWeight: 600, 
+              letterSpacing: '0.05em', 
+              textTransform: 'uppercase', 
+              color: 'rgba(255,255,255,0.4)' 
+            }}>
+              Luthen Connect — Activate legacy. Not replace it.
+            </div>
           </div>
         </section>
       </ScrollFadeIn>
