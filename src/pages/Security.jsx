@@ -97,7 +97,7 @@ const faqs = [
   { q: 'Does Luthen store our enterprise data?', a: 'Luthen stores only the metadata required to execute and audit workflows (execution IDs, timestamps, status codes, audit events). Payload data passes through our execution engine and is not persisted beyond the execution window unless you explicitly configure a data retention policy. Customer data never leaves your infrastructure perimeter in on-premise deployments.' },
   { q: 'Can we bring our own encryption keys?', a: 'Yes. Enterprise customers can configure customer-managed encryption keys (CMK) via AWS KMS or GCP Cloud KMS. Your keys, your data.' },
   { q: 'How do you handle security vulnerabilities?', a: 'We run automated vulnerability scanning weekly across all infrastructure and dependencies. We maintain a responsible disclosure program and conduct an annual third-party penetration test. Critical vulnerabilities are patched within 24 hours.' },
-  { q: 'Is a Data Processing Agreement (DPA) available?', a: 'Yes. GDPR-compliant DPAs are available for all paying customers. Contact your account manager or email security@luthen.ai to request a signed DPA.' },
+  { q: 'Is a Data Processing Agreement (DPA) available?', a: 'Yes. GDPR-compliant DPAs are available for all paying customers. Contact your account manager or email support@behaviol.com to request a signed DPA.' },
   { q: 'Do you conduct background checks on employees?', a: 'All Luthen employees and contractors who have access to customer infrastructure undergo background verification as part of the onboarding process, in compliance with applicable local law.' },
 ]
 
@@ -200,14 +200,14 @@ export default function Security() {
                   </div>
                 ))}
               </div>
-              <a href="mailto:security@luthen.ai" className="btn-console">
+              <a href="mailto:support@behaviol.com" className="btn-console">
                 Report a Vulnerability
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </a>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               {[
-                { label: 'Security Contact', value: 'security@luthen.ai', mono: true },
+                { label: 'Security Contact', value: 'support@behaviol.com', mono: true },
                 { label: 'PGP Key', value: 'Available on request', mono: false },
                 { label: 'Response SLA', value: '< 24 hours', mono: false },
                 { label: 'Pen Test Frequency', value: 'Annual (third-party)', mono: false },
@@ -249,13 +249,13 @@ export default function Security() {
           <h2 className="cta-h2">Need a security review?</h2>
           <p className="cta-sub">Our security team is available to work through your organisation's specific requirements — including custom DPAs, pen test reports, and air-gap deployment scoping.</p>
           <div className="cta-btns">
-            <a href="mailto:security@luthen.ai" className="btn-hero">
+            <a href="mailto:support@behaviol.com" className="btn-hero">
               Contact Security Team
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
             <Link to="/demo" className="btn-hero-ghost">Request a Demo</Link>
           </div>
-          <p style={{ marginTop: 16, fontSize: 13, color: 'var(--g400)' }}>security@luthen.ai &nbsp;·&nbsp; SOC 2 report available under NDA</p>
+          <p style={{ marginTop: 16, fontSize: 13, color: 'var(--g400)' }}>support@behaviol.com &nbsp;·&nbsp; SOC 2 report available under NDA</p>
         </section>
       </ScrollFadeIn>
     </>

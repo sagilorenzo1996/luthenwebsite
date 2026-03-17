@@ -42,9 +42,8 @@ export default function Contact() {
             <div className="s-label">Our Offices</div>
             <h2 className="s-h2" style={{ marginBottom: 32 }}>Find us.</h2>
             {[
-              { city: 'San Francisco', addr: '535 Mission St, Suite 1400\nSan Francisco, CA 94105', type: 'HQ' },
-              { city: 'New York', addr: '1 World Trade Center, Suite 8500\nNew York, NY 10007', type: 'East Coast' },
-              { city: 'London', addr: '30 St Mary Axe, Floor 12\nLondon EC3A 8BF, UK', type: 'EMEA' },
+              { city: 'Bella Vista', addr: 'Unit 105 29-31, Lexington Drive,\nBella Vista NSW 2153', type: 'HQ' },
+              { city: 'Colombo', addr: '32 Elvitigala Mawatha,\nColombo 00500, Sri Lanka', type: 'Development Hub' },
             ].map(office => (
               <div key={office.city} style={{ marginBottom: 28, paddingBottom: 28, borderBottom: '1px solid var(--g100)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
@@ -56,7 +55,7 @@ export default function Contact() {
             ))}
             <div>
               <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 8 }}>Email</div>
-              <a href="mailto:hello@luthen.ai" style={{ color: 'var(--black)', fontWeight: 600, fontSize: 14 }}>hello@luthen.ai</a>
+              <a href="mailto:support@behaviol.com" style={{ color: 'var(--black)', fontWeight: 600, fontSize: 14 }}>support@behaviol.com</a>
             </div>
           </div>
 

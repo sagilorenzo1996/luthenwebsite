@@ -248,7 +248,7 @@ export default function Careers() {
                     <div style={{ padding: '20px 0 28px', borderBottom: '1px solid var(--g100)' }}>
                       <p style={{ fontSize: 14.5, lineHeight: 1.75, color: 'var(--g600)', marginBottom: 20, maxWidth: 680 }}>{role.desc}</p>
                       <a
-                        href={`mailto:careers@luthen.ai?subject=Application: ${encodeURIComponent(role.title)}`}
+                        href={`mailto:careers@behaviol.com?subject=Application: ${encodeURIComponent(role.title)}`}
                         className="btn-hero"
                         style={{ display: 'inline-flex' }}
                       >
@@ -264,7 +264,7 @@ export default function Careers() {
             {filtered.length === 0 && (
               <div style={{ textAlign: 'center', padding: '48px 0', color: 'var(--g400)' }}>
                 <p style={{ fontSize: 15, fontWeight: 500 }}>No open roles in {activeDept} right now.</p>
-                <p style={{ fontSize: 13.5, marginTop: 8 }}>We hire proactively. <a href="mailto:careers@luthen.ai" style={{ color: 'var(--black)', fontWeight: 600 }}>Send us your CV anyway →</a></p>
+                <p style={{ fontSize: 13.5, marginTop: 8 }}>We hire proactively. <a href="mailto:careers@behaviol.com" style={{ color: 'var(--black)', fontWeight: 600 }}>Send us your CV anyway →</a></p>
               </div>
             )}
           </div>
@@ -278,13 +278,13 @@ export default function Careers() {
           <h2 className="cta-h2">We'd still love to hear from you.</h2>
           <p className="cta-sub">We hire exceptional people before roles are open. Send us your CV and tell us where you think you'd have the most impact.</p>
           <div className="cta-btns">
-            <a href="mailto:careers@luthen.ai" className="btn-hero">
+            <a href="mailto:careers@behaviol.com" className="btn-hero">
               Send a Speculative Application
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
             <Link to="/about" className="btn-hero-ghost">Meet the Team</Link>
           </div>
-          <p style={{ marginTop: 16, fontSize: 13, color: 'var(--g400)' }}>careers@luthen.ai</p>
+          <p style={{ marginTop: 16, fontSize: 13, color: 'var(--g400)' }}>careers@behaviol.com</p>
         </section>
       </ScrollFadeIn>
     </>

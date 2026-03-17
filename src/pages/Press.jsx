@@ -63,7 +63,7 @@ export default function Press() {
         <div className="page-hero-inner">
           <div className="page-hero-eyebrow">Newsroom</div>
           <h1>Press &amp; Media.</h1>
-          <p className="page-hero-sub">The latest news, announcements, and media coverage from Luthen. For press inquiries, contact <a href="mailto:press@luthen.ai" style={{ color: 'var(--black)', fontWeight: 600, borderBottom: '1px solid rgba(0,0,0,0.2)' }}>press@luthen.ai</a></p>
+          <p className="page-hero-sub">The latest news, announcements, and media coverage from Luthen. For press inquiries, contact <a href="mailto:support@behaviol.com" style={{ color: 'var(--black)', fontWeight: 600, borderBottom: '1px solid rgba(0,0,0,0.2)' }}>support@behaviol.com</a></p>
         </div>
       </section>
 
@@ -87,7 +87,7 @@ export default function Press() {
               </p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 20, flexWrap: 'wrap' }}>
                 <span style={{ fontSize: 13, color: 'rgba(0,0,0,0.45)', fontWeight: 500 }}>February 2025</span>
-                <a href="mailto:press@luthen.ai" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '10px 20px', borderRadius: 'var(--r-md)', background: 'var(--black)', color: '#fff', fontWeight: 600, fontSize: 13.5, textDecoration: 'none' }}>
+                <a href="mailto:support@behaviol.com" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '10px 20px', borderRadius: 'var(--r-md)', background: 'var(--black)', color: '#fff', fontWeight: 600, fontSize: 13.5, textDecoration: 'none' }}>
                   Request Full Release
                   <svg width="13" height="13" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </a>
@@ -108,7 +108,7 @@ export default function Press() {
                       <h3 style={{ fontSize: 16, fontWeight: 700, letterSpacing: '-0.3px', marginBottom: 8, lineHeight: 1.35 }}>{pr.title}</h3>
                       <p style={{ fontSize: 13.5, lineHeight: 1.65, color: 'var(--g600)' }}>{pr.excerpt}</p>
                     </div>
-                    <a href="mailto:press@luthen.ai" style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 5, padding: '8px 14px', borderRadius: 'var(--r-sm)', border: '1.5px solid var(--g200)', fontSize: 12.5, fontWeight: 600, color: 'var(--black)', textDecoration: 'none', transition: 'all 0.18s', whiteSpace: 'nowrap' }}>
+                    <a href="mailto:support@behaviol.com" style={{ flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 5, padding: '8px 14px', borderRadius: 'var(--r-sm)', border: '1.5px solid var(--g200)', fontSize: 12.5, fontWeight: 600, color: 'var(--black)', textDecoration: 'none', transition: 'all 0.18s', whiteSpace: 'nowrap' }}>
                       Full Release
                     </a>
                   </div>
@@ -152,11 +152,11 @@ export default function Press() {
                 Download our official logos, product screenshots, executive headshots, and company fact sheet. All assets are approved for editorial use.
               </p>
               <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-                <a href="mailto:press@luthen.ai" className="btn-console">
+                <a href="mailto:support@behaviol.com" className="btn-console">
                   Request Brand Kit
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </a>
-                <a href="mailto:press@luthen.ai" className="btn-console">
+                <a href="mailto:support@behaviol.com" className="btn-console">
                   Press Enquiries
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </a>
@@ -176,7 +176,7 @@ export default function Press() {
                     <div style={{ fontSize: 12.5, color: 'rgba(255,255,255,0.4)', marginTop: 2 }}>{asset.desc}</div>
                   </div>
                   <div style={{ marginLeft: 'auto', flexShrink: 0 }}>
-                    <a href="mailto:press@luthen.ai" style={{ fontSize: 12, fontWeight: 600, color: 'var(--turquoise)', textDecoration: 'none' }}>Request →</a>
+                    <a href="mailto:support@behaviol.com" style={{ fontSize: 12, fontWeight: 600, color: 'var(--turquoise)', textDecoration: 'none' }}>Request →</a>
                   </div>
                 </div>
               ))}
@@ -192,13 +192,13 @@ export default function Press() {
           <h2 className="cta-h2">Let's talk.</h2>
           <p className="cta-sub">Our communications team responds to all media enquiries within 4 business hours.</p>
           <div className="cta-btns">
-            <a href="mailto:press@luthen.ai" className="btn-hero">
+            <a href="mailto:support@behaviol.com" className="btn-hero">
               Contact Press Team
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
             </a>
             <Link to="/about" className="btn-hero-ghost">About Luthen</Link>
           </div>
-          <p style={{ marginTop: 16, fontSize: 13, color: 'var(--g400)' }}>press@luthen.ai &nbsp;·&nbsp; Available Mon–Fri, 8am–6pm PT</p>
+          <p style={{ marginTop: 16, fontSize: 13, color: 'var(--g400)' }}>support@behaviol.com &nbsp;·&nbsp; Available Mon–Fri, 8am–6pm PT</p>
         </section>
       </ScrollFadeIn>
     </>

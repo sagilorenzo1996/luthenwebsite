@@ -81,7 +81,7 @@ export default function Navbar() {
         {/* <Link to="/resources" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Resources</Link> */}
         <Link to="/pricing" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Pricing</Link>
         <div className="nav-mobile-divider" />
-        <Link to="/about" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>About</Link>
+        {/* <Link to="/about" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>About</Link> */}
         <Link to="/contact" className="nav-mobile-link" onClick={() => setMenuOpen(false)}>Contact</Link>
         <div className="nav-mobile-divider" />
         <div className="nav-mobile-ctas">

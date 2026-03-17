@@ -14,10 +14,9 @@ export default function Footer() {
           </div>
           <div className="footer-brand-tag">Enterprise Autonomy Layer</div>
           <div className="footer-cert-row">
-            <span className="f-cert">SOC 2 Type II</span>
             <span className="f-cert">GDPR</span>
-            <span className="f-cert">ISO 27001</span>
-            <span className="f-cert">99.99% SLA</span>
+            <span className="f-cert">99.99% Uptime SLA</span>
+            <span className="f-cert">On-premise & Cloud Support</span>
           </div>
         </div>
         <div>
@@ -51,9 +50,9 @@ export default function Footer() {
         <div>
           <div className="f-col-hdr">Company</div>
           <ul className="f-links">
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/careers">Careers</Link></li>
-            <li><Link to="/security">Security</Link></li>
+            {/* <li><Link to="/about">About</Link></li> */}
+            {/* <li><Link to="/careers">Careers</Link></li> */}
+            {/* <li><Link to="/security">Security</Link></li> */}
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
@@ -63,7 +62,7 @@ export default function Footer() {
         <div className="footer-legal">
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms of Service</Link>
-          <Link to="/security">Security</Link>
+          {/* <Link to="/security">Security</Link> */}
           <button
             onClick={() => window.dispatchEvent(new CustomEvent('open-cookie-prefs'))}
             style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', font: 'inherit', fontSize: 'inherit', color: 'inherit', textDecoration: 'none' }}
